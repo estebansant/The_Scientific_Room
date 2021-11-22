@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+body{
+    overflow-x: hidden;
+    background-color: aqua;
+}
+.header{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    width: 20rem;
+    height: auto;
+    margin: 1rem;
+}
+.header__logo--img{
+    position: relative;
+}
+.header__menu{
+    margin-right: 1.5rem;
+}
+.header__menu--profile{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.header__menu--profile img{
+    height: 4rem;
+    width: 4rem;
+    margin-right: 0.8rem;
+}
+.header__menu ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    text-align: right;
+    margin: 0 0 0 4.4rem;
+}
+.header__menu:hover ul, ul:hover{
+    display: block;
+}
+.header__menu li
+{
+    font-size: 2rem;
+}
+.header__menu li a
+{
+    text-decoration: none;
+}
+.header__menu li a:hover
+{
+     text-decoration: underline;
+}
+main section h2{
+    margin-top: 2.5rem;
+    font-size: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.categories__title{
+    font-size: 1.5rem;
+    margin: 2rem 0 .7rem 1rem;
+}
+.carousel{
+    padding-left: 1rem;
+    position: relative;
+    width: 100%;
+}
+.carousel__container{
+    font-size: 0;
+    white-space: nowrap;
+    margin: 1rem 1rem;
+    padding: 1rem 0;
+}
+.carousel-item{
+    width: 22rem;
+    height: 14rem;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-item__img{
+    width: 22rem;
+    height: 14rem;
+    object-fit: cover;
+}
+footer{
+    width: 100%;
+    height: 5rem;
+}
