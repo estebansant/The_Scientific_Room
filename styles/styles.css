@@ -1,80 +1,70 @@
+:root{
+    --main-purple: #8933FF;
+    --secundary-purple: #010039;
+    --gray-buttons: #261F2D;
+    --main-gray: #C4C4C4;
+    --white: #FFFFFF;
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+html{
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
-    overflow-x: hidden;
-    background-color: aqua;
+    background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
 }
 .header{
     width: 100%;
-    height: 8rem;
+    height: 6.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--secundary-purple);
 }
 .header__logo{
-    width: 20rem;
-    height: auto;
-    margin: 1rem;
+    width: 238px;
+    height: 44px;
+    margin-top: 6.5px;
+    margin-left: 18px;
+    margin-bottom: 6.5px;
+    display: block;
+    align-self: center;
 }
-.header__logo--img{
-    position: relative;
-}
-.header__menu{
-    margin-right: 1.5rem;
-}
-.header__menu--profile{
+.header__logo--container{
     display: flex;
     align-items: center;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    font-size: 1.6rem;
-}
-.header__menu--profile img{
-    height: 4rem;
-    width: 4rem;
-    margin-right: 0.8rem;
-}
-.header__menu ul{
-    display: none;
-    list-style: none;
-    position: absolute;
-    padding: 0;
-    text-align: right;
-    margin: 0 0 0 4.4rem;
-}
-.header__menu:hover ul, ul:hover{
-    display: block;
-}
-.header__menu li
-{
-    font-size: 2rem;
-}
-.header__menu li a
-{
     text-decoration: none;
 }
-.header__menu li a:hover
-{
-     text-decoration: underline;
+.header__logo img{
+    width: 29.08px;
+    height: 38px;
+}
+.header__logo h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 14px;
 }
 main section h2{
     margin-top: 2.5rem;
-    font-size: 5.5rem;
+    font-size: 3.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 main section h3{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    color: #B5B7BC;
 }
 .categories__title{
     font-size: 1.5rem;
