@@ -16,13 +16,38 @@ html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    background-color: aqua;
+}
+#check{
+    display: none;
+}
+label #menu, label #x{
+    position: absolute;
+    cursor: pointer;
+    transition: all .350s ease-in-out;
+}
+label #menu{
+    background-image: url(./images/Icons/hamburger-menu.svg);
+    width: 44px;
+    height: 37px;
+    left: 297px;
+    top: 15px;
+}
+label #x{
+    z-index: 1111;
+    background-image: url(./images/Icons/x_icon.svg);
+    width: 20px;
+    height: 20px;
+    left: -148px;
+    top: 7px;
 }
 .header__sidebar{
     position: fixed;
-    left: 0;
+    right: -241px;
     width: 241px;
     height: 100%;
     background-color: var(--gray-buttons);
+    transition: all .350s ease-in-out; 
 }
 .sidebar__menu--button{
     display: inline-block;
@@ -138,4 +163,15 @@ html{
 }
 .sidebar__menu--select:hover{
     cursor: pointer;
+}
+#check:checked ~ .header__sidebar{
+    right: 0;
+}
+#check:checked ~ label #menu{
+    left: 250;
+    opacity: 0%;
+    pointer-events: none;
+}
+#check:checked ~ label #x{
+    left: 148px;
 }
