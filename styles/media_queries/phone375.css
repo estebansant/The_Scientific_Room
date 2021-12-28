@@ -1,0 +1,10 @@
+label #menu{
+    left: 290px;
+    top: 13px;
+}
+.header__sidebar{
+    width: 260px; 
+}
+#check:checked ~ label #x{
+    left: 125px;
+}
