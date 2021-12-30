@@ -23,17 +23,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--secundary-purple);
+  background-color: #010039;
   min-width: 320px; }
-  /* line 9, scss/fragments/_header.scss */
-  header__logo {
-    width: 238px;
-    height: 44px;
-    margin-top: 6.5px;
-    margin-left: 18px;
-    margin-bottom: 6.5px;
-    display: block;
-    align-self: center; }
+
+/* line 10, scss/fragments/_header.scss */
+.header__logo {
+  width: 238px;
+  height: 44px;
+  margin-top: 6.5px;
+  margin-left: 18px;
+  margin-bottom: 6.5px;
+  display: block;
+  align-self: center; }
 
 /* line 19, scss/fragments/_header.scss */
 .header__logo--container {
@@ -88,7 +89,7 @@ label #x {
   right: -300px;
   width: 241px;
   height: 100vh;
-  background-color: var(--gray-buttons);
+  background-color: #261F2D;
   transition: all .350s ease-in-out; }
 
 /* line 34, scss/fragments/_sidebar.scss */
@@ -98,10 +99,10 @@ label #x {
   margin-left: 12px;
   width: 98px;
   height: 32px;
-  background-color: var(--main-purple);
+  background-color: #8933FF;
   border: none;
   border-radius: 8px;
-  color: var(--white);
+  color: #FFFFFF;
   font-size: 1.6rem;
   line-height: 16.41px;
   text-align: center;
@@ -160,7 +161,7 @@ label #x {
   height: 37px;
   font-family: 'Lato';
   font-size: 45px;
-  color: var(--main-gray);
+  color: #C4C4C4;
   margin-right: 34px;
   padding-left: 9px;
   align-self: center;
@@ -175,7 +176,7 @@ label #x {
   height: 100%;
   top: 30px;
   font-size: 1.8rem;
-  color: var(--white);
+  color: #FFFFFF;
   padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 18px; }
@@ -198,7 +199,7 @@ label #x {
   position: absolute;
   left: 22px;
   top: 320px;
-  color: var(--white);
+  color: #FFFFFF;
   font-size: 1.8rem; }
 
 /* line 132, scss/fragments/_sidebar.scss */

@@ -4,17 +4,17 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secundary-purple);
+    background-color: $secondary-purple;
     min-width: 320px;
-    &__logo{
-        width: 238px;
-        height: 44px;
-        margin-top: 6.5px;
-        margin-left: 18px;
-        margin-bottom: 6.5px;
-        display: block;
-        align-self: center;
-    }
+}
+.header__logo{
+    width: 238px;
+    height: 44px;
+    margin-top: 6.5px;
+    margin-left: 18px;
+    margin-bottom: 6.5px;
+    display: block;
+    align-self: center;
 }
 .header__logo--container{
     display: flex;
