@@ -1,0 +1,21 @@
+$main-purple: #8933FF;
+$secundary-purple: #010039;
+$gray-buttons: #261F2D;
+$main-gray: #C4C4C4;
+$white: #FFFFFF;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
+}

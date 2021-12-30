@@ -1,0 +1,25 @@
+{
+  "name": "the_scientific_room",
+  "version": "1.0.0",
+  "description": "create the Scientific Room website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebansant/The_Scientific_Room.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "package"
+  ],
+  "author": "Esteban Santiago <estebansant30@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estebansant/The_Scientific_Room/issues"
+  },
+  "homepage": "https://github.com/estebansant/The_Scientific_Room#readme"
+}
