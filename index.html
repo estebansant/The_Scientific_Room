@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/media_queries/phone360.css" media="(min-width: 359px)" />
     <link rel="stylesheet" href="./css/media_queries/phone375.css" media="(min-width: 374px)" />
     <link rel="stylesheet" href="./css/media_queries/phone411.css" media="(min-width: 410px)" />
+    <link rel="stylesheet" href="./css/media_queries/tablet768.css" media="(min-width: 767px)" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>The Scientific Room | Home</title>
 </head>
@@ -29,10 +30,14 @@
             </label>
         <div class="header__sidebar" id="sidebar">
             <div class="sidebar__menu">
-                <button class="sidebar__menu--button">Log In</button>
-                <button class="sidebar__menu--button">Sign Up</button>
-                <hr class="line_1">
-                <hr class="line_2">
+                <section class="sidebar__menu--button">
+                    <button class="menu--button">Log In</button>
+                    <button class="menu--button">Sign Up</button>
+                </section>
+                <section class="sidebar__lines">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </section>
                 <ul>
                     <li><a href="#"><span class="home"></span>
                         Home</a></li>
@@ -41,12 +46,14 @@
                     <li><a href="#"><span class="questions">?</span>
                         Help and questions</a></li>
                 </ul>
-                <hr class="line_3">
-                <p class="sidebar__menu--language">Change language</p>
-                <select name="language" class="sidebar__menu--select">
-                    <option value="English">English</option>
-                    <option value="Spanish">Spanish</option>
-                </select>
+                <span class="line_3"></span>
+                <section class="sidebar__language">
+                    <p class="sidebar__language--text">Change language</p>
+                    <select name="language" class="sidebar__language--select">
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                    </select>
+                </section>
             </div>
         </div>
 
@@ -64,10 +71,10 @@
                         <img class="carousel-item__img" src="https://images.pexels.com/photos/3347244/pexels-photo-3347244.jpeg?cs=srgb&dl=pexels-bob-ward-3347244.jpg&fm=jpg" alt="Sunset"/>
                     </div>
                 </div>
-
-                <a class="carousel__left--button"> <div> <span class="arrow__left"></span> </div> </a>
-                <a class="carousel__right--button"> <div> <span class="arrow__right"></span> </div></a>
-
+                <div>
+                    <a class="carousel__left--button"> <div> <span class="arrow__left"></span> </div> </a>
+                    <a class="carousel__right--button"> <div> <span class="arrow__right"></span> </div></a>
+                </div>
             </section>
         </section>
     </main>

@@ -99,10 +99,15 @@ label #x {
 
 /* line 35, scss/fragments/_sidebar.scss */
 .sidebar__menu--button {
-  display: inline-block;
-  margin-top: 35px;
-  margin-left: 12px;
-  width: 98px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 215px;
+  height: 92px; }
+
+/* line 42, scss/fragments/_sidebar.scss */
+.menu--button {
+  width: 88px;
   height: 32px;
   background-color: #8933FF;
   border: none;
@@ -113,34 +118,35 @@ label #x {
   text-align: center;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25); }
 
-/* line 50, scss/fragments/_sidebar.scss */
-.sidebar__menu--button:hover {
+/* line 54, scss/fragments/_sidebar.scss */
+.menu--button:hover {
   box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer; }
 
-/* line 54, scss/fragments/_sidebar.scss */
-.sidebar__menu .line_1 {
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  left: 0px;
-  top: 95px;
-  border: 1px solid #000000; }
+/* line 58, scss/fragments/_sidebar.scss */
+.sidebar__lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 16px; }
+  /* line 64, scss/fragments/_sidebar.scss */
+  .sidebar__lines .line_1 {
+    width: 100%;
+    height: 0px;
+    border-bottom: 3px solid #000000; }
+  /* line 69, scss/fragments/_sidebar.scss */
+  .sidebar__lines .line_2 {
+    width: 100%;
+    height: 0px;
+    border-bottom: 3px solid #000000; }
 
-/* line 62, scss/fragments/_sidebar.scss */
-.sidebar__menu .line_2 {
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  left: 0px;
-  top: 103px;
-  border: 1px solid #000000; }
-
-/* line 70, scss/fragments/_sidebar.scss */
+/* line 75, scss/fragments/_sidebar.scss */
 .sidebar__menu ul {
-  display: block; }
+  display: flex;
+  flex-direction: column; }
 
-/* line 73, scss/fragments/_sidebar.scss */
+/* line 79, scss/fragments/_sidebar.scss */
 .sidebar__menu li .home {
   width: 36px;
   height: 37px;
@@ -150,7 +156,7 @@ label #x {
   background-repeat: no-repeat;
   margin-right: 15px; }
 
-/* line 82, scss/fragments/_sidebar.scss */
+/* line 88, scss/fragments/_sidebar.scss */
 .sidebar__menu li .settings {
   width: 36px;
   height: 37px;
@@ -160,7 +166,7 @@ label #x {
   background-repeat: no-repeat;
   margin-right: 15px; }
 
-/* line 91, scss/fragments/_sidebar.scss */
+/* line 97, scss/fragments/_sidebar.scss */
 .sidebar__menu li .questions {
   width: 18px;
   height: 37px;
@@ -172,11 +178,10 @@ label #x {
   align-self: center;
   margin-top: -10px; }
 
-/* line 102, scss/fragments/_sidebar.scss */
+/* line 108, scss/fragments/_sidebar.scss */
 .sidebar__menu ul a {
   display: flex;
   align-items: center;
-  position: relative;
   width: 100%;
   height: 100%;
   top: 30px;
@@ -186,65 +191,62 @@ label #x {
   padding-bottom: 10px;
   padding-left: 18px; }
 
-/* line 115, scss/fragments/_sidebar.scss */
+/* line 120, scss/fragments/_sidebar.scss */
 .sidebar__menu ul a:hover {
   padding-left: 22px;
   cursor: pointer; }
 
-/* line 119, scss/fragments/_sidebar.scss */
+/* line 124, scss/fragments/_sidebar.scss */
 .sidebar__menu .line_3 {
-  position: absolute;
+  display: flex;
+  margin-top: 12px;
   width: 100%;
-  top: 300px;
-  border: 1px solid #000000;
-  background-color: #000000; }
+  border-bottom: 3px solid #000000; }
 
-/* line 126, scss/fragments/_sidebar.scss */
-.sidebar__menu--language {
-  position: absolute;
-  left: 22px;
-  top: 320px;
-  color: #C4C4C4;
-  font-size: 1.8rem; }
+/* line 130, scss/fragments/_sidebar.scss */
+.sidebar__language {
+  display: flex;
+  flex-direction: column; }
+  /* line 133, scss/fragments/_sidebar.scss */
+  .sidebar__language .sidebar__language--text {
+    margin: 12px 0 8px 22px;
+    color: #C4C4C4;
+    font-size: 1.8rem; }
+  /* line 138, scss/fragments/_sidebar.scss */
+  .sidebar__language .sidebar__language--select {
+    margin: 0 0 0 22px;
+    width: 130px;
+    height: 25px;
+    background-color: #261F2D;
+    border: 2px solid #C4C4C4;
+    color: #FFFFFF;
+    font-size: 1.6rem; }
+    /* line 146, scss/fragments/_sidebar.scss */
+    .sidebar__language .sidebar__language--select .sidebar__language--select option {
+      font-size: 1.6rem; }
 
-/* line 133, scss/fragments/_sidebar.scss */
-.sidebar__menu--select {
-  position: absolute;
-  left: 22px;
-  top: 345px;
-  width: 130px;
-  height: 25px;
-  background-color: #261F2D;
-  border: 2px solid #C4C4C4;
-  color: #FFFFFF;
-  font-size: 1.6rem; }
-
-/* line 144, scss/fragments/_sidebar.scss */
-.sidebar__menu--select option {
-  font-size: 1.6rem; }
-
-/* line 147, scss/fragments/_sidebar.scss */
-.sidebar__menu--select:hover {
+/* line 151, scss/fragments/_sidebar.scss */
+.sidebar__language--select:hover {
   cursor: pointer; }
 
-/* line 150, scss/fragments/_sidebar.scss */
+/* line 154, scss/fragments/_sidebar.scss */
 #check:checked ~ .header__sidebar {
   right: 0; }
 
-/* line 153, scss/fragments/_sidebar.scss */
+/* line 157, scss/fragments/_sidebar.scss */
 #check:checked ~ label #menu {
   right: 250px;
   opacity: 0%;
   pointer-events: none; }
 
-/* line 158, scss/fragments/_sidebar.scss */
+/* line 162, scss/fragments/_sidebar.scss */
 #check:checked ~ label #x {
-  left: 90px; }
+  left: 115px; }
 
 /* line 1, scss/fragments/_main.scss */
 main {
   height: 80vh;
-  width: 100%;
+  width: 100vw;
   min-width: 320px; }
 
 /* line 6, scss/fragments/_main.scss */
@@ -296,21 +298,21 @@ footer {
 .carousel {
   padding-left: 1rem;
   position: relative;
-  width: 93.5%;
+  width: 92.5vw;
   height: 210px; }
 
 /* line 7, scss/fragments/_carousel.scss */
 .carousel__container {
   font-size: 0;
   white-space: nowrap;
-  margin: 1rem 1rem;
-  padding: 1rem 0; }
+  margin: 10px 10px;
+  padding: 10px 0; }
 
 /* line 13, scss/fragments/_carousel.scss */
 .carousel-item {
-  width: 22rem;
-  height: 14rem;
-  border-radius: 25px;
+  width: 312.89px;
+  height: 176px;
+  border-radius: 10px;
   overflow: hidden;
   margin-right: 10px;
   display: inline-block;
@@ -320,8 +322,8 @@ footer {
 
 /* line 24, scss/fragments/_carousel.scss */
 .carousel-item__img {
-  width: 22rem;
-  height: 14rem;
+  width: 312.89px;
+  height: 176px;
   object-fit: cover; }
 
 /* line 29, scss/fragments/_carousel.scss */

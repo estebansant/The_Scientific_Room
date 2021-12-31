@@ -1,19 +1,19 @@
 .carousel{
     padding-left: 1rem;
     position: relative;
-    width: 93.5%;
+    width: 92.5vw;
     height: 210px;
 }
 .carousel__container{
     font-size: 0;
     white-space: nowrap;
-    margin: 1rem 1rem;
-    padding: 1rem 0;
+    margin: 10px 10px;
+    padding: 10px 0;
 }
 .carousel-item{
-    width: 22rem;
-    height: 14rem;
-    border-radius: 25px;
+    width: 312.89px;
+    height: 176px;
+    border-radius: 10px;
     overflow: hidden;
     margin-right: 10px;
     display: inline-block;
@@ -22,8 +22,8 @@
     position: relative;
 }
 .carousel-item__img{
-    width: 22rem;
-    height: 14rem;
+    width: 312.89px;
+    height: 176px;
     object-fit: cover;
 }
 .carousel__left--button div, .carousel__right--button div{

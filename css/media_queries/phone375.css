@@ -5,6 +5,9 @@ label #menu{
 .header__sidebar{
     width: 260px; 
 }
+.sidebar__menu--button{
+    width: 234px;
+}
 #check:checked ~ label #x{
-    left: 125px;
+    left: 145px;
 }
