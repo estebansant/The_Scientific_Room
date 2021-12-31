@@ -1,0 +1,59 @@
+.carousel{
+    padding-left: 1rem;
+    position: relative;
+    width: 93.5%;
+    height: 210px;
+}
+.carousel__container{
+    font-size: 0;
+    white-space: nowrap;
+    margin: 1rem 1rem;
+    padding: 1rem 0;
+}
+.carousel-item{
+    width: 22rem;
+    height: 14rem;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-item__img{
+    width: 22rem;
+    height: 14rem;
+    object-fit: cover;
+}
+.carousel__left--button div, .carousel__right--button div{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: $gray-buttons;
+}
+.carousel__left--button div{
+    position: absolute;
+    left: 5rem;
+}
+.carousel__right--button div{
+    position: absolute;
+    right: -5rem;
+}
+.arrow__left, .arrow__right{
+    width: 40px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.arrow__left{
+    position: inherit;
+    background-image: url(../images/Icons/arrow_left.svg);
+    margin: 12px 0 0px 8.5px;
+}
+.arrow__right{
+    position: inherit;
+    background-image: url(../images/Icons/arrow_right.svg);
+    margin: 12px 0 0px 8.5px;
+}

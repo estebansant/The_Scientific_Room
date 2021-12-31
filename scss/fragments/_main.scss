@@ -33,35 +33,11 @@ hr{
     color: $main-gray;
 }
 .categories__title{
-    font-size: 1.5rem;
-    margin: 2rem 0 .7rem 1rem;
-}
-.carousel{
-    padding-left: 1rem;
-    position: relative;
-    width: 100%;
-}
-.carousel__container{
-    font-size: 0;
-    white-space: nowrap;
-    margin: 1rem 1rem;
-    padding: 1rem 0;
-}
-.carousel-item{
-    width: 22rem;
-    height: 14rem;
-    border-radius: 25px;
-    overflow: hidden;
-    margin-right: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transform-origin: center left;
-    position: relative;
-}
-.carousel-item__img{
-    width: 22rem;
-    height: 14rem;
-    object-fit: cover;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 28.13px;
+    margin: 4rem 0rem .2rem 2.5rem;
+    color: $white;
 }
 footer{
     width: 100%;

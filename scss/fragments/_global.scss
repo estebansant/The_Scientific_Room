@@ -17,5 +17,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
 }

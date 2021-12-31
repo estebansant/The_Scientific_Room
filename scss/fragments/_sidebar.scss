@@ -23,7 +23,8 @@ label #x{
 }
 .header__sidebar{
     z-index: 1000;
-    position: absolute;
+    display: nowrap;
+    position: fixed;
     top: 0;
     right: -300px;
     width: 241px;
