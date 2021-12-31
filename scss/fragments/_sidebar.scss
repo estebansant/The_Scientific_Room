@@ -10,7 +10,7 @@ label #menu{
     background-image: url(../images/Icons/hamburger-menu.svg);
     width: 44px;
     height: 37px;
-    left: 255px;
+    left: 80%;
     top: 13px;
 }
 label #x{
@@ -126,7 +126,7 @@ label #x{
     position: absolute;
     left: 22px;
     top: 320px;
-    color: $white;
+    color: $main-gray;
     font-size: 1.8rem;
 }
 .sidebar__menu--select{
@@ -150,7 +150,7 @@ label #x{
     right: 0;
 }
 #check:checked ~ label #menu{
-    left: 250;
+    right: 250px;
     opacity: 0%;
     pointer-events: none;
 }

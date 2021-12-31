@@ -69,7 +69,7 @@ label #menu {
   background-image: url(../images/Icons/hamburger-menu.svg);
   width: 44px;
   height: 37px;
-  left: 255px;
+  left: 80%;
   top: 13px; }
 
 /* line 16, scss/fragments/_sidebar.scss */
@@ -199,7 +199,7 @@ label #x {
   position: absolute;
   left: 22px;
   top: 320px;
-  color: #FFFFFF;
+  color: #C4C4C4;
   font-size: 1.8rem; }
 
 /* line 132, scss/fragments/_sidebar.scss */
@@ -228,7 +228,7 @@ label #x {
 
 /* line 152, scss/fragments/_sidebar.scss */
 #check:checked ~ label #menu {
-  left: 250;
+  right: 250px;
   opacity: 0%;
   pointer-events: none; }
 
@@ -238,47 +238,61 @@ label #x {
 
 /* line 1, scss/fragments/_main.scss */
 main {
-  height: 80%;
+  height: 80vh;
   width: 100%;
   min-width: 320px; }
 
 /* line 6, scss/fragments/_main.scss */
-main section h2 {
+hr {
+  width: 0px;
+  height: 0px;
+  border: 0px; }
+
+/* line 11, scss/fragments/_main.scss */
+.title h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   margin-top: 2.5rem;
   font-size: 3.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 310px;
+  height: 80px;
   color: white; }
 
-/* line 14, scss/fragments/_main.scss */
-main section h3 {
+/* line 23, scss/fragments/_main.scss */
+.title h3 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin: 0 auto;
+  width: 264px;
+  height: 35px;
+  margin-top: .4rem;
   font-size: 1.6rem;
-  color: #B5B7BC; }
+  color: #C4C4C4; }
 
-/* line 22, scss/fragments/_main.scss */
+/* line 35, scss/fragments/_main.scss */
 .categories__title {
   font-size: 1.5rem;
   margin: 2rem 0 .7rem 1rem; }
 
-/* line 26, scss/fragments/_main.scss */
+/* line 39, scss/fragments/_main.scss */
 .carousel {
   padding-left: 1rem;
   position: relative;
   width: 100%; }
 
-/* line 31, scss/fragments/_main.scss */
+/* line 44, scss/fragments/_main.scss */
 .carousel__container {
   font-size: 0;
   white-space: nowrap;
   margin: 1rem 1rem;
   padding: 1rem 0; }
 
-/* line 37, scss/fragments/_main.scss */
+/* line 50, scss/fragments/_main.scss */
 .carousel-item {
   width: 22rem;
   height: 14rem;
@@ -290,13 +304,13 @@ main section h3 {
   transform-origin: center left;
   position: relative; }
 
-/* line 48, scss/fragments/_main.scss */
+/* line 61, scss/fragments/_main.scss */
 .carousel-item__img {
   width: 22rem;
   height: 14rem;
   object-fit: cover; }
 
-/* line 53, scss/fragments/_main.scss */
+/* line 66, scss/fragments/_main.scss */
 footer {
   width: 100%;
   height: 5rem; }

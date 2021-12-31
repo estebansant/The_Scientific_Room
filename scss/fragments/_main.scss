@@ -1,23 +1,36 @@
 main{
-    height: 80%;
+    height: 80vh;
     width: 100%;
     min-width: 320px;
 }
-main section h2{
+hr{
+    width: 0px;
+    height: 0px;
+    border: 0px;
+}
+.title h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     margin-top: 2.5rem;
     font-size: 3.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 310px;
+    height: 80px;
     color: white;
 }
-main section h3{
+.title h3{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin: 0 auto;
+    width: 264px;
+    height: 35px;
+    margin-top: .4rem;
     font-size: 1.6rem;
-    color: #B5B7BC;
+    color: $main-gray;
 }
 .categories__title{
     font-size: 1.5rem;
