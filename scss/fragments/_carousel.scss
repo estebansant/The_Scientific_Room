@@ -1,16 +1,17 @@
 .carousel{
     padding-left: 1rem;
     position: relative;
-    width: 92.5vw;
+    width: 100vw;
     height: 210px;
+    &__title{
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 28.13px;
+        margin: 4rem 0rem .2rem 2.5rem;
+        color: $white;
+    }
 }
-.carousel__container{
-    font-size: 0;
-    white-space: nowrap;
-    margin: 10px 10px;
-    padding: 10px 0;
-}
-.carousel-item{
+.carousel__item{
     width: 312.89px;
     height: 176px;
     border-radius: 10px;
@@ -20,40 +21,17 @@
     cursor: pointer;
     transform-origin: center left;
     position: relative;
+    &&--img{
+        width: 312.89px;
+        height: 176px;
+        object-fit: cover;
+    }
 }
-.carousel-item__img{
+.information{
+    display: none;
+}
+#check1{
+    display: none;
     width: 312.89px;
     height: 176px;
-    object-fit: cover;
-}
-.carousel__left--button div, .carousel__right--button div{
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background-color: $gray-buttons;
-}
-.carousel__left--button div{
-    position: absolute;
-    left: 5rem;
-}
-.carousel__right--button div{
-    position: absolute;
-    right: -5rem;
-}
-.arrow__left, .arrow__right{
-    width: 40px;
-    height: 30px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.arrow__left{
-    position: inherit;
-    background-image: url(../images/Icons/arrow_left.svg);
-    margin: 12px 0 0px 8.5px;
-}
-.arrow__right{
-    position: inherit;
-    background-image: url(../images/Icons/arrow_right.svg);
-    margin: 12px 0 0px 8.5px;
 }

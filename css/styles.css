@@ -88,7 +88,6 @@ label #x {
 /* line 24, scss/fragments/_sidebar.scss */
 .header__sidebar {
   z-index: 1000;
-  display: nowrap;
   position: fixed;
   top: 0;
   right: -300px;
@@ -97,7 +96,7 @@ label #x {
   background-color: #261F2D;
   transition: all .350s ease-in-out; }
 
-/* line 35, scss/fragments/_sidebar.scss */
+/* line 34, scss/fragments/_sidebar.scss */
 .sidebar__menu--button {
   display: flex;
   justify-content: space-evenly;
@@ -105,7 +104,7 @@ label #x {
   width: 215px;
   height: 92px; }
 
-/* line 42, scss/fragments/_sidebar.scss */
+/* line 41, scss/fragments/_sidebar.scss */
 .menu--button {
   width: 88px;
   height: 32px;
@@ -118,35 +117,35 @@ label #x {
   text-align: center;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25); }
 
-/* line 54, scss/fragments/_sidebar.scss */
+/* line 53, scss/fragments/_sidebar.scss */
 .menu--button:hover {
   box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer; }
 
-/* line 58, scss/fragments/_sidebar.scss */
+/* line 57, scss/fragments/_sidebar.scss */
 .sidebar__lines {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 16px; }
-  /* line 64, scss/fragments/_sidebar.scss */
+  /* line 63, scss/fragments/_sidebar.scss */
   .sidebar__lines .line_1 {
     width: 100%;
     height: 0px;
     border-bottom: 3px solid #000000; }
-  /* line 69, scss/fragments/_sidebar.scss */
+  /* line 68, scss/fragments/_sidebar.scss */
   .sidebar__lines .line_2 {
     width: 100%;
     height: 0px;
     border-bottom: 3px solid #000000; }
 
-/* line 75, scss/fragments/_sidebar.scss */
+/* line 74, scss/fragments/_sidebar.scss */
 .sidebar__menu ul {
   display: flex;
   flex-direction: column; }
 
-/* line 79, scss/fragments/_sidebar.scss */
+/* line 78, scss/fragments/_sidebar.scss */
 .sidebar__menu li .home {
   width: 36px;
   height: 37px;
@@ -156,7 +155,7 @@ label #x {
   background-repeat: no-repeat;
   margin-right: 15px; }
 
-/* line 88, scss/fragments/_sidebar.scss */
+/* line 87, scss/fragments/_sidebar.scss */
 .sidebar__menu li .settings {
   width: 36px;
   height: 37px;
@@ -166,7 +165,7 @@ label #x {
   background-repeat: no-repeat;
   margin-right: 15px; }
 
-/* line 97, scss/fragments/_sidebar.scss */
+/* line 96, scss/fragments/_sidebar.scss */
 .sidebar__menu li .questions {
   width: 18px;
   height: 37px;
@@ -178,7 +177,7 @@ label #x {
   align-self: center;
   margin-top: -10px; }
 
-/* line 108, scss/fragments/_sidebar.scss */
+/* line 107, scss/fragments/_sidebar.scss */
 .sidebar__menu ul a {
   display: flex;
   align-items: center;
@@ -191,28 +190,28 @@ label #x {
   padding-bottom: 10px;
   padding-left: 18px; }
 
-/* line 120, scss/fragments/_sidebar.scss */
+/* line 119, scss/fragments/_sidebar.scss */
 .sidebar__menu ul a:hover {
   padding-left: 22px;
   cursor: pointer; }
 
-/* line 124, scss/fragments/_sidebar.scss */
+/* line 123, scss/fragments/_sidebar.scss */
 .sidebar__menu .line_3 {
   display: flex;
   margin-top: 12px;
   width: 100%;
   border-bottom: 3px solid #000000; }
 
-/* line 130, scss/fragments/_sidebar.scss */
+/* line 129, scss/fragments/_sidebar.scss */
 .sidebar__language {
   display: flex;
   flex-direction: column; }
-  /* line 133, scss/fragments/_sidebar.scss */
+  /* line 132, scss/fragments/_sidebar.scss */
   .sidebar__language .sidebar__language--text {
     margin: 12px 0 8px 22px;
     color: #C4C4C4;
     font-size: 1.8rem; }
-  /* line 138, scss/fragments/_sidebar.scss */
+  /* line 137, scss/fragments/_sidebar.scss */
   .sidebar__language .sidebar__language--select {
     margin: 0 0 0 22px;
     width: 130px;
@@ -221,25 +220,25 @@ label #x {
     border: 2px solid #C4C4C4;
     color: #FFFFFF;
     font-size: 1.6rem; }
-    /* line 146, scss/fragments/_sidebar.scss */
+    /* line 145, scss/fragments/_sidebar.scss */
     .sidebar__language .sidebar__language--select .sidebar__language--select option {
       font-size: 1.6rem; }
 
-/* line 151, scss/fragments/_sidebar.scss */
+/* line 150, scss/fragments/_sidebar.scss */
 .sidebar__language--select:hover {
   cursor: pointer; }
 
-/* line 154, scss/fragments/_sidebar.scss */
+/* line 153, scss/fragments/_sidebar.scss */
 #check:checked ~ .header__sidebar {
   right: 0; }
 
-/* line 157, scss/fragments/_sidebar.scss */
+/* line 156, scss/fragments/_sidebar.scss */
 #check:checked ~ label #menu {
   right: 250px;
   opacity: 0%;
   pointer-events: none; }
 
-/* line 162, scss/fragments/_sidebar.scss */
+/* line 161, scss/fragments/_sidebar.scss */
 #check:checked ~ label #x {
   left: 115px; }
 
@@ -282,14 +281,6 @@ hr {
   color: #C4C4C4; }
 
 /* line 35, scss/fragments/_main.scss */
-.categories__title {
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 28.13px;
-  margin: 4rem 0rem .2rem 2.5rem;
-  color: #FFFFFF; }
-
-/* line 42, scss/fragments/_main.scss */
 footer {
   width: 100%;
   height: 5rem; }
@@ -300,16 +291,16 @@ footer {
   position: relative;
   width: 92.5vw;
   height: 210px; }
+  /* line 6, scss/fragments/_carousel.scss */
+  .carousel__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 28.13px;
+    margin: 4rem 0rem .2rem 2.5rem;
+    color: #FFFFFF; }
 
-/* line 7, scss/fragments/_carousel.scss */
-.carousel__container {
-  font-size: 0;
-  white-space: nowrap;
-  margin: 10px 10px;
-  padding: 10px 0; }
-
-/* line 13, scss/fragments/_carousel.scss */
-.carousel-item {
+/* line 15, scss/fragments/_carousel.scss */
+.carousel__item {
   width: 312.89px;
   height: 176px;
   border-radius: 10px;
@@ -320,45 +311,43 @@ footer {
   transform-origin: center left;
   position: relative; }
 
-/* line 24, scss/fragments/_carousel.scss */
-.carousel-item__img {
+/* line 26, scss/fragments/_carousel.scss */
+.carousel__item--img {
   width: 312.89px;
   height: 176px;
   object-fit: cover; }
 
-/* line 29, scss/fragments/_carousel.scss */
+/* line 31, scss/fragments/_carousel.scss */
 .carousel__left--button div, .carousel__right--button div {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   background-color: #261F2D; }
 
-/* line 35, scss/fragments/_carousel.scss */
+/* line 37, scss/fragments/_carousel.scss */
 .carousel__left--button div {
   position: absolute;
   left: 5rem; }
 
-/* line 39, scss/fragments/_carousel.scss */
+/* line 41, scss/fragments/_carousel.scss */
 .carousel__right--button div {
   position: absolute;
   right: -5rem; }
 
-/* line 43, scss/fragments/_carousel.scss */
+/* line 45, scss/fragments/_carousel.scss */
 .arrow__left, .arrow__right {
   width: 40px;
   height: 30px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: inherit;
+  margin: 12px 0 0px 8.5px; }
 
-/* line 50, scss/fragments/_carousel.scss */
+/* line 54, scss/fragments/_carousel.scss */
 .arrow__left {
-  position: inherit;
-  background-image: url(../images/Icons/arrow_left.svg);
-  margin: 12px 0 0px 8.5px; }
+  background-image: url(../images/Icons/arrow_left.svg); }
 
-/* line 55, scss/fragments/_carousel.scss */
+/* line 57, scss/fragments/_carousel.scss */
 .arrow__right {
-  position: inherit;
-  background-image: url(../images/Icons/arrow_right.svg);
-  margin: 12px 0 0px 8.5px; }
+  background-image: url(../images/Icons/arrow_right.svg); }

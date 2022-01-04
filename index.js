@@ -30,3 +30,8 @@ function closeNav() {
     footer.style.opacity = "1";
     tick.checked = false;
 }
+
+var img1 = document.createElement("img1");
+img.src = "./images/thumbnails/graveda_no_es_fuerza.jpg";
+var src1 = document.getElementById("image1");
+src1.appendChild(img1);

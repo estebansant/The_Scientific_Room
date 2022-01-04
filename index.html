@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/media_queries/phone375.css" media="(min-width: 374px)" />
     <link rel="stylesheet" href="./css/media_queries/phone411.css" media="(min-width: 410px)" />
     <link rel="stylesheet" href="./css/media_queries/tablet768.css" media="(min-width: 767px)" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>The Scientific Room | Home</title>
 </head>
@@ -63,19 +64,38 @@
                 <h3>Choose a video and start learning <hr> about your Universe</h3>
             </section>
 
-            <h2 class="categories__title">Space Exploration</h2>
-
             <section class="carousel">
-                <div class="carousel__container">
-                    <div class="carousel-item">
-                        <img class="carousel-item__img" src="https://images.pexels.com/photos/3347244/pexels-photo-3347244.jpeg?cs=srgb&dl=pexels-bob-ward-3347244.jpg&fm=jpg" alt="Sunset"/>
+                <h2 class="carousel__title">Space Exploration</h2>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="carousel__item" id="video1">
+                            <img class="carousel__item--img" src="./images/thumbnails/graveda_no_es_fuerza.jpg" alt="La gravedad no es una fuerza" />
+                            <input type="checkbox" id="check1">
+                            <label for="check1"></label>
+                                <section class="information">
+                                    <div class="information__container1">
+                                        <img id="image1"/>
+                                        <h3>La Gravedad NO ES UNA FUERZA | El Principio de Equivalencia</h3>
+                                        <p>¡Es hora de explicar el gran descubrimiento que hizo Albert Einstein! Veamos por qué la gravedad… Realmente no es una fuerza, sino algo mucho más alucinante.</p>
+                                    </div>
+                                </section>
+                        </div>
+                      </div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
                     </div>
-                </div>
-                <div>
-                    <a class="carousel__left--button"> <div> <span class="arrow__left"></span> </div> </a>
-                    <a class="carousel__right--button"> <div> <span class="arrow__right"></span> </div></a>
-                </div>
+       
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>      
             </section>
+
         </section>
     </main>
     <footer id="footer">
