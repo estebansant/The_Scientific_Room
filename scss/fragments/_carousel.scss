@@ -21,17 +21,35 @@
     cursor: pointer;
     transform-origin: center left;
     position: relative;
-    &&--img{
+    .carousel__item--img{
         width: 312.89px;
         height: 176px;
         object-fit: cover;
     }
 }
-.information{
-    display: none;
-}
 #check1{
     display: none;
+}
+#check1 label{
     width: 312.89px;
     height: 176px;
+}
+.information{
+    width: 60vw;
+    height: 80vh;
+    opacity: 0%;
+    transition: all .350s ease-in-out;
+    background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
+    border: 2px solid $white;
+    border-radius: 5px;
+}
+.information__container{
+    display: inherit;
+    .information__container iframe{
+        width: 420px;
+        height: 315px;
+    }
+}
+#check1:checked ~ .information{
+    opacity: 100%;
 }

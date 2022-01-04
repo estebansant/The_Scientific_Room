@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/media_queries/phone360.css" media="(min-width: 359px)" />
-    <link rel="stylesheet" href="./css/media_queries/phone375.css" media="(min-width: 374px)" />
-    <link rel="stylesheet" href="./css/media_queries/phone411.css" media="(min-width: 410px)" />
-    <link rel="stylesheet" href="./css/media_queries/tablet768.css" media="(min-width: 767px)" />
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>The Scientific Room | Home</title>
@@ -21,42 +18,43 @@
                 <h1>The Scientific <br> Room</h1>
             </a>
         </div>
+        <section class="container">
+
+            <button class="menu" onclick="openNav()"></button>
+
+            <div class="header__sidebar" id="sidebar">
+                <div class="sidebar__menu">
+                    <button class="x"></button>
+                    <section class="sidebar__menu--button">
+                        <button class="menu--button">Log In</button>
+                        <button class="menu--button">Sign Up</button>
+                    </section>
+                    <section class="sidebar__lines">
+                        <span class="line_1"></span>
+                        <span class="line_2"></span>
+                    </section>
+                    <ul>
+                        <li><a href="#"><span class="home"></span>
+                            Home</a></li>
+                        <li><a href="#"><span class="settings"></span>
+                            Settings</a></li>
+                        <li><a href="#"><span class="questions">?</span>
+                            Help and questions</a></li>
+                    </ul>
+                    <span class="line_3"></span>
+                    <section class="sidebar__language">
+                        <p class="sidebar__language--text">Change language</p>
+                        <select name="language" class="sidebar__language--select">
+                            <option value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                        </select>
+                    </section>
+                </div>
+            </div>
+        </section>
     </header>
     
     <main>
-        <input type="checkbox" id="check">
-            <label for="check">
-                <span id="menu"></span>
-                <span id="x"></span>
-            </label>
-        <div class="header__sidebar" id="sidebar">
-            <div class="sidebar__menu">
-                <section class="sidebar__menu--button">
-                    <button class="menu--button">Log In</button>
-                    <button class="menu--button">Sign Up</button>
-                </section>
-                <section class="sidebar__lines">
-                    <span class="line_1"></span>
-                    <span class="line_2"></span>
-                </section>
-                <ul>
-                    <li><a href="#"><span class="home"></span>
-                        Home</a></li>
-                    <li><a href="#"><span class="settings"></span>
-                        Settings</a></li>
-                    <li><a href="#"><span class="questions">?</span>
-                        Help and questions</a></li>
-                </ul>
-                <span class="line_3"></span>
-                <section class="sidebar__language">
-                    <p class="sidebar__language--text">Change language</p>
-                    <select name="language" class="sidebar__language--select">
-                        <option value="English">English</option>
-                        <option value="Spanish">Spanish</option>
-                    </select>
-                </section>
-            </div>
-        </div>
 
         <section id="content">
             <section class="title">
@@ -72,12 +70,12 @@
                       <!-- Slides -->
                       <div class="swiper-slide">
                         <div class="carousel__item" id="video1">
-                            <img class="carousel__item--img" src="./images/thumbnails/graveda_no_es_fuerza.jpg" alt="La gravedad no es una fuerza" />
                             <input type="checkbox" id="check1">
-                            <label for="check1"></label>
+                            <label for="check1">
+                            <img class="carousel__item--img" src="./images/thumbnails/graveda_no_es_fuerza.jpg" alt="La gravedad no es una fuerza" />
+                            </label>
                                 <section class="information">
-                                    <div class="information__container1">
-                                        <img id="image1"/>
+                                    <div class="information__container">
                                         <h3>La Gravedad NO ES UNA FUERZA | El Principio de Equivalencia</h3>
                                         <p>¡Es hora de explicar el gran descubrimiento que hizo Albert Einstein! Veamos por qué la gravedad… Realmente no es una fuerza, sino algo mucho más alucinante.</p>
                                     </div>

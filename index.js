@@ -6,7 +6,7 @@ let footer = document.getElementById("footer");
 tick.addEventListener("click", openNav);
 
 function openNav() {
-    if (tick.checked) { 
+    if (openNav == true) { 
         content.style.opacity = "0.5";
         head.style.opacity = "0.5";
         footer.style.opacity = "0.5";
@@ -28,10 +28,5 @@ function closeNav() {
     content.style.opacity = "1";
     head.style.opacity = "1";
     footer.style.opacity = "1";
-    tick.checked = false;
+    
 }
-
-var img1 = document.createElement("img1");
-img.src = "./images/thumbnails/graveda_no_es_fuerza.jpg";
-var src1 = document.getElementById("image1");
-src1.appendChild(img1);
