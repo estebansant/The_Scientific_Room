@@ -292,10 +292,14 @@ footer {
     font-size: 2.4rem;
     font-weight: 500;
     line-height: 28.13px;
-    margin: 4rem 0rem .2rem 2.5rem;
+    margin: 40px 0 8px 5.5%;
     color: #FFFFFF; }
 
 /* line 14, scss/fragments/_carousel.scss */
+.swiper-slide {
+  padding: 0 5%; }
+
+/* line 17, scss/fragments/_carousel.scss */
 .carousel__item {
   width: 312.89px;
   height: 176px;
@@ -304,41 +308,43 @@ footer {
   margin-right: 10px;
   display: inline-block;
   cursor: pointer;
-  transform-origin: center left;
   position: relative; }
-  /* line 24, scss/fragments/_carousel.scss */
+  /* line 26, scss/fragments/_carousel.scss */
   .carousel__item .carousel__item--img {
     width: 312.89px;
     height: 176px;
     object-fit: cover; }
 
-/* line 30, scss/fragments/_carousel.scss */
-#check1 {
-  display: none; }
-
-/* line 33, scss/fragments/_carousel.scss */
-#check1 label {
-  width: 312.89px;
-  height: 176px; }
-
-/* line 37, scss/fragments/_carousel.scss */
+/* line 32, scss/fragments/_carousel.scss */
 .information {
-  width: 60vw;
-  height: 80vh;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
   opacity: 0%;
-  transition: all .350s ease-in-out;
-  background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
-  border: 2px solid #FFFFFF;
-  border-radius: 5px; }
+  transition: 250ms opacity;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column; }
+  /* line 47, scss/fragments/_carousel.scss */
+  .information__container {
+    width: inherit;
+    height: inherit; }
+    /* line 50, scss/fragments/_carousel.scss */
+    .information__container h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #FFFFFF; }
+    /* line 55, scss/fragments/_carousel.scss */
+    .information__container p {
+      font-size: 1.2rem;
+      color: #C4C4C4; }
 
-/* line 46, scss/fragments/_carousel.scss */
-.information__container {
-  display: inherit; }
-  /* line 48, scss/fragments/_carousel.scss */
-  .information__container .information__container iframe {
-    width: 420px;
-    height: 315px; }
-
-/* line 53, scss/fragments/_carousel.scss */
-#check1:checked ~ .information {
+/* line 61, scss/fragments/_carousel.scss */
+.information:hover {
   opacity: 100%; }

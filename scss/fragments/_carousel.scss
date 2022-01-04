@@ -7,9 +7,12 @@
         font-size: 2.4rem;
         font-weight: 500;
         line-height: 28.13px;
-        margin: 4rem 0rem .2rem 2.5rem;
+        margin: 40px 0 8px 5.5%;
         color: $white;
     }
+}
+.swiper-slide{
+    padding: 0 5%;
 }
 .carousel__item{
     width: 312.89px;
@@ -19,7 +22,6 @@
     margin-right: 10px;
     display: inline-block;
     cursor: pointer;
-    transform-origin: center left;
     position: relative;
     .carousel__item--img{
         width: 312.89px;
@@ -27,29 +29,35 @@
         object-fit: cover;
     }
 }
-#check1{
-    display: none;
-}
-#check1 label{
-    width: 312.89px;
-    height: 176px;
-}
 .information{
-    width: 60vw;
-    height: 80vh;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 0%;
-    transition: all .350s ease-in-out;
-    background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
-    border: 2px solid $white;
-    border-radius: 5px;
-}
-.information__container{
-    display: inherit;
-    .information__container iframe{
-        width: 420px;
-        height: 315px;
+    transition: 250ms opacity;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    &__container{
+        width: inherit;
+        height: inherit;
+        h3{
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $white
+        }
+        p{
+            font-size: 1.2rem;
+            color: $main-gray;
+        }
     }
 }
-#check1:checked ~ .information{
+.information:hover{
     opacity: 100%;
 }
