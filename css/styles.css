@@ -60,47 +60,52 @@ header {
 
 /* line 1, scss/fragments/_sidebar.scss */
 .menu {
-  cursor: pointer;
-  transition: all .350s ease-in-out;
-  background: transparent url(../images/Icons/hamburger-menu.svg);
   width: 44px;
   height: 37px;
-  top: 13px; }
+  margin: 4px 20px 0 0;
+  background: transparent url(../images/Icons/hamburger-menu.svg);
+  border: none;
+  top: 13px;
+  cursor: pointer;
+  transition: all .350s ease-in-out; }
 
-/* line 9, scss/fragments/_sidebar.scss */
+/* line 11, scss/fragments/_sidebar.scss */
 #x {
   position: absolute; }
 
-/* line 13, scss/fragments/_sidebar.scss */
+/* line 15, scss/fragments/_sidebar.scss */
 .header__sidebar {
   z-index: 1000;
   position: fixed;
   top: 0px;
-  right: 0px;
+  right: -300px;
   width: 241px;
   height: 100vh;
   background-color: #261F2D;
   transition: all .350s ease-in-out; }
 
-/* line 23, scss/fragments/_sidebar.scss */
+/* line 25, scss/fragments/_sidebar.scss */
 .x {
   background: transparent url(../images/Icons/x_icon.svg);
   width: 20px;
   height: 20px;
+  margin: 10px 0 0 15px;
   border: none;
   cursor: pointer; }
 
-/* line 30, scss/fragments/_sidebar.scss */
+/* line 33, scss/fragments/_sidebar.scss */
 .sidebar__menu--button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 215px;
-  height: 92px; }
-  /* line 36, scss/fragments/_sidebar.scss */
+  height: 52px;
+  margin: 0 auto;
+  margin-bottom: 14px; }
+  /* line 41, scss/fragments/_sidebar.scss */
   .sidebar__menu--button .menu--button {
     width: 88px;
-    height: 32px;
+    height: 34px;
     background-color: #8933FF;
     border: none;
     border-radius: 8px;
@@ -109,35 +114,35 @@ header {
     line-height: 16.41px;
     text-align: center;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25); }
-  /* line 48, scss/fragments/_sidebar.scss */
+  /* line 53, scss/fragments/_sidebar.scss */
   .sidebar__menu--button .menu--button:hover {
     box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer; }
 
-/* line 53, scss/fragments/_sidebar.scss */
+/* line 58, scss/fragments/_sidebar.scss */
 .sidebar__lines {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 16px; }
-  /* line 59, scss/fragments/_sidebar.scss */
+  /* line 64, scss/fragments/_sidebar.scss */
   .sidebar__lines .line_1 {
     width: 100%;
     height: 0px;
     border-bottom: 3px solid #000000; }
-  /* line 64, scss/fragments/_sidebar.scss */
+  /* line 69, scss/fragments/_sidebar.scss */
   .sidebar__lines .line_2 {
     width: 100%;
     height: 0px;
     border-bottom: 3px solid #000000; }
 
-/* line 70, scss/fragments/_sidebar.scss */
+/* line 75, scss/fragments/_sidebar.scss */
 .sidebar__menu ul {
   display: flex;
   flex-direction: column; }
 
-/* line 74, scss/fragments/_sidebar.scss */
+/* line 79, scss/fragments/_sidebar.scss */
 .sidebar__menu li .home {
   width: 36px;
   height: 37px;
@@ -147,14 +152,14 @@ header {
   background-repeat: no-repeat;
   margin-right: 15px; }
 
-/* line 83, scss/fragments/_sidebar.scss */
+/* line 88, scss/fragments/_sidebar.scss */
 .sidebar__menu li .settings {
   width: 36px;
   height: 37px;
   background-image: url(../images/Icons/settings_icon.svg);
   margin-right: 15px; }
 
-/* line 90, scss/fragments/_sidebar.scss */
+/* line 95, scss/fragments/_sidebar.scss */
 .sidebar__menu li .questions {
   width: 18px;
   height: 37px;
@@ -166,7 +171,7 @@ header {
   align-self: center;
   margin-top: -10px; }
 
-/* line 101, scss/fragments/_sidebar.scss */
+/* line 106, scss/fragments/_sidebar.scss */
 .sidebar__menu ul a {
   display: flex;
   align-items: center;
@@ -179,28 +184,28 @@ header {
   padding-bottom: 10px;
   padding-left: 18px; }
 
-/* line 113, scss/fragments/_sidebar.scss */
+/* line 118, scss/fragments/_sidebar.scss */
 .sidebar__menu ul a:hover {
   padding-left: 22px;
   cursor: pointer; }
 
-/* line 117, scss/fragments/_sidebar.scss */
+/* line 122, scss/fragments/_sidebar.scss */
 .sidebar__menu .line_3 {
   display: flex;
   margin-top: 12px;
   width: 100%;
   border-bottom: 3px solid #000000; }
 
-/* line 123, scss/fragments/_sidebar.scss */
+/* line 128, scss/fragments/_sidebar.scss */
 .sidebar__language {
   display: flex;
   flex-direction: column; }
-  /* line 126, scss/fragments/_sidebar.scss */
+  /* line 131, scss/fragments/_sidebar.scss */
   .sidebar__language .sidebar__language--text {
     margin: 12px 0 8px 22px;
     color: #C4C4C4;
     font-size: 1.8rem; }
-  /* line 131, scss/fragments/_sidebar.scss */
+  /* line 136, scss/fragments/_sidebar.scss */
   .sidebar__language .sidebar__language--select {
     margin: 0 0 0 22px;
     width: 130px;
@@ -209,21 +214,21 @@ header {
     border: 2px solid #C4C4C4;
     color: #FFFFFF;
     font-size: 1.6rem; }
-    /* line 139, scss/fragments/_sidebar.scss */
+    /* line 144, scss/fragments/_sidebar.scss */
     .sidebar__language .sidebar__language--select .sidebar__language--select option {
       font-size: 1.6rem; }
 
-/* line 144, scss/fragments/_sidebar.scss */
+/* line 149, scss/fragments/_sidebar.scss */
 .sidebar__language--select:hover {
   cursor: pointer; }
 
-/* line 147, scss/fragments/_sidebar.scss */
+/* line 152, scss/fragments/_sidebar.scss */
 #check:checked ~ label #menu {
   right: 250px;
   opacity: 0%;
   pointer-events: none; }
 
-/* line 152, scss/fragments/_sidebar.scss */
+/* line 157, scss/fragments/_sidebar.scss */
 #check:checked ~ label #x {
   left: 115px; }
 
