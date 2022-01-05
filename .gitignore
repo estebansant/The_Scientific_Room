@@ -106,5 +106,5 @@ dist
 # Ignore .PNG / .JPG images / .SVG images
 *.png
 *.jpg
-*.jepg
+*.jpeg
 *.svg
