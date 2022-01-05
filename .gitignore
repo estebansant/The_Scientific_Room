@@ -104,6 +104,7 @@ dist
 .tern-port
 
 # Ignore .PNG / .JPG images / .SVG images
-*.PNG
-*.JPG
-*.SVG
+*.png
+*.jpg
+*.jepg
+*.svg
