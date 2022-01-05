@@ -13,6 +13,7 @@
 }
 .swiper-slide{
     padding: 0 5%;
+    overflow: hidden;
 }
 .carousel__item{
     width: 312.89px;
@@ -23,11 +24,11 @@
     display: inline-block;
     cursor: pointer;
     position: relative;
-    .carousel__item--img{
-        width: 312.89px;
-        height: 176px;
-        object-fit: cover;
-    }
+}
+.carousel__item--img{
+    width: 312.89px;
+    height: 176px;
+    object-fit: cover;
 }
 .information{
     height: inherit;
