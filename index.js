@@ -20,3 +20,14 @@ function closeNav() {
     head.style.opacity = "1";
     footer.style.opacity = "1";
 }
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
