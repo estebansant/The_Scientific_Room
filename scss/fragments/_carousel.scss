@@ -11,13 +11,16 @@
         color: $white;
     }
 }
-.swiper-slide{
-    padding: 0 5%;
+.carousel__container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     overflow: hidden;
 }
 .carousel__item{
     width: 312.89px;
     height: 176px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin-right: 10px;
     cursor: pointer;
