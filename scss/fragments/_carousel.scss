@@ -9,3 +9,20 @@
     align-items: center;
 
 }
+.carousel{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .swiper-slide{
+        transition: 250ms all;
+
+        &:hover{
+            transform: scale(1.2);
+            z-index: 1;
+        }
+    }
+}
+:root{
+    --swiper-theme-color: #fff;
+}

@@ -292,3 +292,20 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+/* line 13, scss/fragments/_carousel.scss */
+.carousel img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 17, scss/fragments/_carousel.scss */
+.carousel .swiper-slide {
+  transition: 250ms all; }
+  /* line 20, scss/fragments/_carousel.scss */
+  .carousel .swiper-slide:hover {
+    transform: scale(1.2);
+    z-index: 1; }
+
+/* line 26, scss/fragments/_carousel.scss */
+:root {
+  --swiper-theme-color: #fff; }
