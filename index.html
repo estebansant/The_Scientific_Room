@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/Icons/tubo_de_ensayo2.svg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>The Scientific Room | Home</title>
@@ -68,135 +67,56 @@
 
             <section class="carousel">
                 <h2 class="carousel__title">Gravity</h2>
-                <div class="carousel__container">
-                    <button class="carousel__left">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                      <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/gravedad_no_es_fuerza.jpg" alt="La gravedad no es una fuerza" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>La Gravedad NO ES UNA FUERZA | El Principio de Equivalencia</h3>
-                                            <p>¡Es hora de explicar el gran descubrimiento que hizo Albert Einstein! Veamos por qué la gravedad…</p>
-                                            </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/gravity_neildegrasse_tyson.jpg" alt="Gravity by Neil deGrasse Tyson" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>The Mysterious Force of Gravity Explained by Neil deGrasse Tyson</h3>
-                                            <p>Of the 4 fundamental forces of nature, gravity is the most intuitive one. We experience gravity every second of our lives so it makes sense that our brains are evolutionarily equipped to intuitively grasp the effects of gravity. At least here on Earth.</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <img class="carousel__item--img" src="./images/thumbnails/gravity/gravedad_no_es_fuerza.jpg" alt="La gravedad no es una fuerza" />
+                                <section class="information">
+                                    <div class="information__container">
+                                        <h3>La Gravedad NO ES UNA FUERZA | El Principio de Equivalencia</h3>
+                                        <p>¡Es hora de explicar el gran descubrimiento que hizo Albert Einstein! Veamos por qué la gravedad…</p>
                                         </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/espaciotiempo_curvo.jpg" alt="Espaciotiempo curvo o graviton" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>Espaciotiempo Curvo o Gravitón: ¿Quién Genera la Gravedad?</h3>
-                                            <p>Os han contado que la gravedad no es una fuerza sino una manifestación del espaciotiempo curvo. PERO, también te han dicho la gravedad podría estar mediada por una partícula, el gravitón.</p>
-                                        </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/gravity_explained_astrophysicist.jpg" alt="Gravity explained by astrophysicist" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>Astrophysicist Explains Gravity in 5 Levels of Difficulty | WIRED</h3>
-                                            <p>Astrophysicist Janna Levin, PhD, is asked to explain the concept of gravity to 5 different people; a child, a teen, a college student, a grad student, and an expert.</p>
-                                        </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/gravitacion_incompleta.jpg" alt="La ley de gravitacion esta incompleta" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>La Ley de Gravitación está Incompleta</h3>
-                                            <p>Mercurio se movía muy raro y a los físicos no les quedó mas remedio que modificar la gravedad de Newton. Hoy vamos a ver cómo se libraron de esta.</p>
-                                        </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/gravity_passage_of_time.jpg" alt="Does gravity really affect the passage of time?" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>Does Gravity Really Affect The Passage Of Time? | Gravity And Me | Spark</h3>
-                                            <p>Physics professor Jim Al-Khalili investigates the amazing science of gravity. A fundamental force of nature, gravity shapes our entire universe, sculpting galaxies and warping space and time.</p>
-                                        </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/pluma_y_martillo_caen_igual.jpg" alt="¿Por qué la pluma y el martillo caaen a la vez?" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>¿Por qué una Pluma y un Martillo Caen a la Vez?</h3>
-                                            <p>Todos los cuerpos, sin importar su peso, caen al mismo ritmo... Pero, ¿por qué ocurre eso? Aquí se encuentra uno de los grandes secretos que oculta la gravedad.</p>
-                                        </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/general_relativity_explained.jpg" alt="General relativity explained" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>General Relativity Explained simply & visually</h3>
-                                            <p>When Albert Einstein first published the Special Theory of relativity in 1905, he was  ridiculed. People thought it was just too weird and radical to be real.</p>
-                                        </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/gravedad_y_curvatura.jpg" alt="¿Qué es el espacio-tiempo curvo?" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>Esto va a doler... ESPACIO-TIEMPO CURVO: ¿qué es eso?</h3>
-                                            <p>Les presento una de las claves para la relatividad general, la curvatura del espacio tiempo. Einstein obtuvo la idea gracias a una famosa paradoja, la de Paul Ehrenfest. Te explico todo esto.</p>
-                                        </div>
-                                    </section>
-                            </a>
-                        </div>
-                        <div class="carousel__item">
-                            <a href="#" class="link">
-                                <img class="carousel__item--img" src="./images/thumbnails/gravity/quantum_gravity_and_general_relativity.jpg" alt="Quantum mechanics vs General Relativity" />
-                                    <section class="information">
-                                        <div class="information__container">
-                                            <h3>Quantum Gravity: How quantum mechanics ruins Einstein's general relativity</h3>
-                                            <p>Today, we find holes in Einstein's theory, such as its inability to explain the singularity inside black holes, and the big bang.</p>
-                                        </div>
-                                    </section>
-                            </a>
-                        </div>
-
-                    <button aria-label="Siguiente" class="carousel__siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-
+                                </section>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
             </section>
         </section>
     </main>
     <footer id="footer">
         
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+    </script>
     <script src="index.js"></script>
 </body>
 </html>

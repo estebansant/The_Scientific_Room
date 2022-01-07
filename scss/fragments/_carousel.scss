@@ -11,13 +11,11 @@
         color: $white;
     }
 }
-.carousel__container{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    overflow: hidden;
+.swiper{
+    width: 100%;
+    height: auto;
 }
-.carousel__item{
+.swiper-slide{
     width: 312.89px;
     height: 176px;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
@@ -27,6 +25,7 @@
     position: relative;
 }
 .carousel__item--img{
+    display: block;
     width: 312.89px;
     height: 176px;
     object-fit: cover;
@@ -62,4 +61,7 @@
 }
 .information:hover{
     opacity: 100%;
+}
+.swiper-pagination{
+    display: none;
 }
