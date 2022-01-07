@@ -282,75 +282,13 @@ footer {
   height: 5rem; }
 
 /* line 1, scss/fragments/_carousel.scss */
-.carousel {
-  padding-left: 1rem;
-  position: relative;
-  width: 100vw;
-  height: 210px; }
-  /* line 6, scss/fragments/_carousel.scss */
-  .carousel__title {
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 28.13px;
-    margin: 40px 0 8px 5.5%;
-    color: #FFFFFF; }
-
-/* line 14, scss/fragments/_carousel.scss */
-.swiper {
+.swiper-container {
   width: 100%;
-  height: auto; }
+  height: 100%; }
 
-/* line 18, scss/fragments/_carousel.scss */
+/* line 5, scss/fragments/_carousel.scss */
 .swiper-slide {
-  width: 312.89px;
-  height: 176px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-  position: relative; }
-
-/* line 27, scss/fragments/_carousel.scss */
-.carousel__item--img {
-  display: block;
-  width: 312.89px;
-  height: 176px;
-  object-fit: cover; }
-
-/* line 33, scss/fragments/_carousel.scss */
-.information {
-  height: inherit;
-  width: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-  opacity: 0%;
-  transition: 250ms opacity;
-  padding: 10px;
+  background-color: white;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column; }
-  /* line 48, scss/fragments/_carousel.scss */
-  .information__container {
-    width: inherit;
-    height: inherit; }
-    /* line 51, scss/fragments/_carousel.scss */
-    .information__container h3 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #FFFFFF; }
-    /* line 56, scss/fragments/_carousel.scss */
-    .information__container p {
-      font-size: 1.2rem;
-      color: #C4C4C4; }
-
-/* line 62, scss/fragments/_carousel.scss */
-.information:hover {
-  opacity: 100%; }
-
-/* line 65, scss/fragments/_carousel.scss */
-.swiper-pagination {
-  display: none; }
+  justify-content: center;
+  align-items: center; }
