@@ -299,20 +299,19 @@ footer {
 /* line 15, scss/fragments/_carousel.scss */
 .carousel__container {
   width: 100%;
-  height: 260px;
+  height: fit-content;
   margin-top: 15px;
   padding: 0 5%; }
   /* line 20, scss/fragments/_carousel.scss */
   .carousel__container .swiper-container {
-    width: 100%;
-    height: 260px; }
-    /* line 23, scss/fragments/_carousel.scss */
+    width: 100%; }
+    /* line 22, scss/fragments/_carousel.scss */
     .carousel__container .swiper-container .swiper-slide {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       border-radius: 8px; }
-      /* line 28, scss/fragments/_carousel.scss */
+      /* line 27, scss/fragments/_carousel.scss */
       .carousel__container .swiper-container .swiper-slide .carousel__item--img {
         width: 100%;
         height: 100%;
@@ -320,46 +319,47 @@ footer {
         border-top-right-radius: 8px;
         object-fit: cover; }
 
-/* line 38, scss/fragments/_carousel.scss */
+/* line 37, scss/fragments/_carousel.scss */
 .swiper-button-next, .swiper-button-prev {
   width: 5%;
   top: 0;
   bottom: 0;
   margin: 0; }
 
-/* line 44, scss/fragments/_carousel.scss */
+/* line 43, scss/fragments/_carousel.scss */
 .swiper-button-next {
   right: 0; }
 
-/* line 47, scss/fragments/_carousel.scss */
+/* line 46, scss/fragments/_carousel.scss */
 .swiper-button-prev {
   left: 0; }
 
-/* line 50, scss/fragments/_carousel.scss */
+/* line 49, scss/fragments/_carousel.scss */
 .swiper-button-next::after, .swiper-button-prev::after {
   font-weight: bold;
   transition: transform 0.2s ease-in-out; }
 
-/* line 55, scss/fragments/_carousel.scss */
+/* line 54, scss/fragments/_carousel.scss */
 .carousel img {
   max-width: 100%;
   height: auto; }
 
-/* line 59, scss/fragments/_carousel.scss */
+/* line 58, scss/fragments/_carousel.scss */
 .carousel .swiper-slide {
   transition: 250ms all; }
-  /* line 62, scss/fragments/_carousel.scss */
+  /* line 61, scss/fragments/_carousel.scss */
   .carousel .swiper-slide:hover {
     transform: scale(1.2);
     z-index: 1; }
 
-/* line 68, scss/fragments/_carousel.scss */
+/* line 67, scss/fragments/_carousel.scss */
 .information {
-  position: absolute;
-  bottom: 0%;
+  position: relative;
+  top: -2px;
   width: 100%;
   background-color: #FFFFFF;
-  border-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   padding: 10px;
   z-index: -10; }
   /* line 76, scss/fragments/_carousel.scss */
