@@ -2,7 +2,8 @@
     padding-left: 1rem;
     position: relative;
     width: 100vw;
-    height: 250px;
+    height: fit-content;
+    overflow: hidden;
     &__title{
         font-size: 2.4rem;
         font-weight: 500;
@@ -13,17 +14,17 @@
 }
 .carousel__container{
     width: 100%;
-    height: 210px;
-    margin-top: 45px;
-    overflow: hidden;
+    height: 260px;
+    margin-top: 15px;
+    padding: 0 5%;
     .swiper-container{
         width: 100%;
-        height: 210pxpx;
+        height: 260px;
         .swiper-slide{
             background-color: white;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             border-radius: 8px;
             .carousel__item--img{
                 width: 100%;
@@ -33,7 +34,7 @@
         .swiper-button-next, .swiper-button-prev{
             height: 100%;
             width: 4%;
-            top: 45px;
+            top: 0;
             bottom: 0;
             margin: 0;
             background-color: rgba(0, 0, 0, 0.4);
@@ -56,13 +57,21 @@
 }
 .information{
     border-radius: 8px;
-    .information__container{
-        display: flex;
-        flex-direction: column;
-    }
+    padding: 10px;
     h3{
+        display: block;
         font-size: 1.6rem;
         font-weight: 700;
         color: black;
+    }
+    .information__container--text{
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $gray-buttons;
+        }
     }
 }
