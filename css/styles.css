@@ -1,4 +1,4 @@
-/* line 7, scss/fragments/_global.scss */
+/* line 8, scss/fragments/_global.scss */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,13 +6,13 @@
   list-style: none;
   text-decoration: none; }
 
-/* line 14, scss/fragments/_global.scss */
+/* line 15, scss/fragments/_global.scss */
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth; }
 
-/* line 19, scss/fragments/_global.scss */
+/* line 20, scss/fragments/_global.scss */
 body {
   display: flex;
   justify-content: center;
@@ -308,53 +308,72 @@ footer {
     height: 260px; }
     /* line 23, scss/fragments/_carousel.scss */
     .carousel__container .swiper-container .swiper-slide {
-      background-color: white;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       border-radius: 8px; }
-      /* line 29, scss/fragments/_carousel.scss */
+      /* line 28, scss/fragments/_carousel.scss */
       .carousel__container .swiper-container .swiper-slide .carousel__item--img {
         width: 100%;
-        border-radius: 6px; }
-    /* line 34, scss/fragments/_carousel.scss */
-    .carousel__container .swiper-container .swiper-button-next, .carousel__container .swiper-container .swiper-button-prev {
-      height: 100%;
-      width: 4%;
-      top: 0;
-      bottom: 0;
-      margin: 0;
-      background-color: rgba(0, 0, 0, 0.4); }
+        height: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        object-fit: cover; }
 
-/* line 45, scss/fragments/_carousel.scss */
+/* line 38, scss/fragments/_carousel.scss */
+.swiper-button-next, .swiper-button-prev {
+  width: 5%;
+  top: 0;
+  bottom: 0;
+  margin: 0; }
+
+/* line 44, scss/fragments/_carousel.scss */
+.swiper-button-next {
+  right: 0; }
+
+/* line 47, scss/fragments/_carousel.scss */
+.swiper-button-prev {
+  left: 0; }
+
+/* line 50, scss/fragments/_carousel.scss */
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out; }
+
+/* line 55, scss/fragments/_carousel.scss */
 .carousel img {
   max-width: 100%;
   height: auto; }
 
-/* line 49, scss/fragments/_carousel.scss */
+/* line 59, scss/fragments/_carousel.scss */
 .carousel .swiper-slide {
   transition: 250ms all; }
-  /* line 52, scss/fragments/_carousel.scss */
+  /* line 62, scss/fragments/_carousel.scss */
   .carousel .swiper-slide:hover {
     transform: scale(1.2);
     z-index: 1; }
 
-/* line 58, scss/fragments/_carousel.scss */
+/* line 68, scss/fragments/_carousel.scss */
 .information {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background-color: #FFFFFF;
   border-radius: 8px;
-  padding: 10px; }
-  /* line 61, scss/fragments/_carousel.scss */
+  padding: 10px;
+  z-index: -10; }
+  /* line 76, scss/fragments/_carousel.scss */
   .information h3 {
     display: block;
     font-size: 1.6rem;
     font-weight: 700;
     color: black; }
-  /* line 67, scss/fragments/_carousel.scss */
+  /* line 82, scss/fragments/_carousel.scss */
   .information .information__container--text {
     padding-top: 5px;
     display: flex;
     justify-content: space-between; }
-    /* line 71, scss/fragments/_carousel.scss */
+    /* line 86, scss/fragments/_carousel.scss */
     .information .information__container--text p {
       font-size: 1.4rem;
       font-weight: 500;

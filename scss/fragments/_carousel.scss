@@ -21,25 +21,35 @@
         width: 100%;
         height: 260px;
         .swiper-slide{
-            background-color: white;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            border-radius: 8px;
+            border-radius: $border-radius;
             .carousel__item--img{
                 width: 100%;
-                border-radius: 6px;
+                height: 100%;
+                border-top-left-radius: $border-radius;
+                border-top-right-radius: $border-radius;
+                object-fit: cover;
             }
         }
-        .swiper-button-next, .swiper-button-prev{
-            height: 100%;
-            width: 4%;
-            top: 0;
-            bottom: 0;
-            margin: 0;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
     }
+}
+.swiper-button-next, .swiper-button-prev{
+    width: 5%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
 }
 .carousel{
     img{
@@ -56,8 +66,13 @@
     }
 }
 .information{
-    border-radius: 8px;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color:  $white;
+    border-radius: $border-radius;
     padding: 10px;
+    z-index: -10;
     h3{
         display: block;
         font-size: 1.6rem;
