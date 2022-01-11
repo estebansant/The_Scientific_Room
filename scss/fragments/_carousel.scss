@@ -2,7 +2,7 @@
     padding-left: 1rem;
     position: relative;
     width: 100vw;
-    height: fit-content;
+    height: 380px;
     overflow: hidden;
     &__title{
         font-size: 2.4rem;
@@ -36,11 +36,13 @@
 }
 .swiper-button-next, .swiper-button-prev{
     color: $white;
-    height: 74%;
-    top: 26%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 50%;
     bottom: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .swiper-button-next{
     right: 0;
@@ -92,4 +94,15 @@
             color: $gray-buttons;
         }
     }
+}
+.swiper-slide:hover~.swiper-slide {
+    transform: translate3d(25px, 0, 0, 25px);
+}
+
+.swiper-wrapper:hover .swiper-slide {
+    opacity: 0.5;
+}
+.swiper-wrapper:hover .swiper-slide:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
