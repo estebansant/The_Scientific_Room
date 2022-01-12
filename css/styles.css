@@ -348,6 +348,27 @@ footer {
         object-fit: cover; }
 
 /* line 37, scss/fragments/_carousel.scss */
+.language {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 20px;
+  background-color: black;
+  border-bottom-left-radius: 8px; }
+
+/* line 47, scss/fragments/_carousel.scss */
+.language p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 1.4rem; }
+
+/* line 56, scss/fragments/_carousel.scss */
 .swiper-button-next, .swiper-button-prev {
   color: #FFFFFF;
   border-radius: 50%;
@@ -358,34 +379,34 @@ footer {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.5); }
 
-/* line 47, scss/fragments/_carousel.scss */
+/* line 66, scss/fragments/_carousel.scss */
 .swiper-button-next {
   right: 1%; }
 
-/* line 50, scss/fragments/_carousel.scss */
+/* line 69, scss/fragments/_carousel.scss */
 .swiper-button-prev {
   left: 4px; }
 
-/* line 53, scss/fragments/_carousel.scss */
+/* line 72, scss/fragments/_carousel.scss */
 .swiper-button-next::after, .swiper-button-prev::after {
   font-weight: bold;
   font-size: 3vh;
   transition: transform 0.1s ease-out; }
 
-/* line 59, scss/fragments/_carousel.scss */
+/* line 78, scss/fragments/_carousel.scss */
 .carousel img {
   max-width: 100%;
   height: auto; }
 
-/* line 63, scss/fragments/_carousel.scss */
+/* line 82, scss/fragments/_carousel.scss */
 .carousel .swiper-slide {
   transition: 250ms all; }
-  /* line 66, scss/fragments/_carousel.scss */
+  /* line 85, scss/fragments/_carousel.scss */
   .carousel .swiper-slide:hover {
     transform: scale(1.2);
     z-index: 1; }
 
-/* line 72, scss/fragments/_carousel.scss */
+/* line 91, scss/fragments/_carousel.scss */
 .information {
   position: relative;
   top: -2px;
@@ -395,32 +416,32 @@ footer {
   border-bottom-right-radius: 8px;
   padding: 10px;
   z-index: -10; }
-  /* line 81, scss/fragments/_carousel.scss */
+  /* line 100, scss/fragments/_carousel.scss */
   .information h3 {
     display: block;
     font-size: 1.6rem;
     font-weight: 700;
     color: black; }
-  /* line 87, scss/fragments/_carousel.scss */
+  /* line 106, scss/fragments/_carousel.scss */
   .information .information__container--text {
     padding-top: 5px;
     display: flex;
     justify-content: space-between; }
-    /* line 91, scss/fragments/_carousel.scss */
+    /* line 110, scss/fragments/_carousel.scss */
     .information .information__container--text p {
       font-size: 1.4rem;
       font-weight: 500;
       color: #261F2D; }
 
-/* line 98, scss/fragments/_carousel.scss */
+/* line 117, scss/fragments/_carousel.scss */
 .swiper-slide:hover ~ .swiper-slide {
   transform: translate3d(25px, 0, 0, 25px); }
 
-/* line 102, scss/fragments/_carousel.scss */
+/* line 121, scss/fragments/_carousel.scss */
 .swiper-wrapper:hover .swiper-slide {
   opacity: 0.5; }
 
-/* line 105, scss/fragments/_carousel.scss */
+/* line 124, scss/fragments/_carousel.scss */
 .swiper-wrapper:hover .swiper-slide:hover {
   transform: scale(1.2);
   opacity: 1; }
