@@ -16,11 +16,35 @@ html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    min-height: 100%;
 }
 body{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
     background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
+    background-attachment: fixed;
 }
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: $secondary-purple;
+}
+.section::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: $border-radius;
+    background: $main-purple;
+}
+::-webkit-scrollbar-thumb:hover{
+ background: $main-purple;
+ box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb::after{
+    background: $main-purple;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+   }

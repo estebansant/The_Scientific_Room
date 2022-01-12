@@ -10,15 +10,44 @@
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  min-height: 100%; }
 
-/* line 20, scss/fragments/_global.scss */
+/* line 21, scss/fragments/_global.scss */
 body {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%); }
+  overflow-x: hidden;
+  background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
+  background-attachment: fixed; }
+
+/* line 31, scss/fragments/_global.scss */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; }
+
+/* line 35, scss/fragments/_global.scss */
+::-webkit-scrollbar-track {
+  background-color: #010039; }
+
+/* line 38, scss/fragments/_global.scss */
+.section::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background: #8933FF; }
+
+/* line 43, scss/fragments/_global.scss */
+::-webkit-scrollbar-thumb:hover {
+  background: #8933FF;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5); }
+
+/* line 47, scss/fragments/_global.scss */
+::-webkit-scrollbar-thumb::after {
+  background: #8933FF;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5); }
 
 /* line 1, scss/fragments/_header.scss */
 header {
@@ -28,9 +57,12 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #010039;
-  min-width: 320px; }
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  z-index: 900; }
 
-/* line 10, scss/fragments/_header.scss */
+/* line 13, scss/fragments/_header.scss */
 .header__logo {
   width: 238px;
   height: 44px;
@@ -40,18 +72,18 @@ header {
   display: block;
   align-self: center; }
 
-/* line 19, scss/fragments/_header.scss */
+/* line 22, scss/fragments/_header.scss */
 .header__logo--container {
   display: flex;
   align-items: center;
   text-decoration: none; }
 
-/* line 24, scss/fragments/_header.scss */
+/* line 27, scss/fragments/_header.scss */
 .header__logo img {
   width: 29.08px;
   height: 38px; }
 
-/* line 28, scss/fragments/_header.scss */
+/* line 31, scss/fragments/_header.scss */
 .header__logo h1 {
   font-size: 1.8rem;
   font-weight: bold;

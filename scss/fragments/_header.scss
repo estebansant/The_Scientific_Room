@@ -6,6 +6,9 @@ header{
     align-items: center;
     background-color: $secondary-purple;
     min-width: 320px;
+    position: fixed;
+    top: 0;
+    z-index: 900;
 }
 .header__logo{
     width: 238px;
