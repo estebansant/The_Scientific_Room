@@ -1,0 +1,25 @@
+.contact{
+    width: fit-content;
+    height: inherit;
+    margin-top: 15px;
+}
+.contact p{
+    padding-top: 15px;
+    padding-left: 15px;
+    }
+.contact p ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.contact p ul li{
+            width: fit-content;
+            height: fit-content;
+            padding-top: 12px;
+            padding-left: 15px;
+}
+.contact p ul li a i{
+    padding-right: 8px;
+}

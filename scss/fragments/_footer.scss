@@ -1,12 +1,57 @@
 footer{
-    height: 80px;
+    display: flex;
+    height: 15vh;
     width: 100%;
     background-color: $secondary_purple;
 }
 .contact{
-    display: flex;
-    justify-content: center;
+    width: fit-content;
+    height: inherit;
+    margin-top: 15px;
     & p{
+        padding-top: 15px;
+        padding-left: 15px;
         color: $white;
+        font-size: 1.6rem;
+        font-family: 'Roboto';
+        font-weight: 700;
     }
+    & ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+        & li{
+            width: fit-content;
+            height: fit-content;
+            font-size: 1.6rem;
+            padding-top: 12px;
+            padding-left: 15px;
+            color: $main-gray;
+            & a{
+                color: $white;
+                & i{
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+.politics{
+    height: inherit;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+    right: 15px;
+    & a{
+        color: $white;
+        font-size: 1.6rem;
+    }
+}
+footer a:hover{
+    text-decoration: underline;
 }

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./images/Icons/tubo_de_ensayo2.svg">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media_queries/tablet.css" media="(min-width: 930px)" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>The Scientific Room | Home</title>
     <script src="https://kit.fontawesome.com/9e88cc989b.js" crossorigin="anonymous"></script>
@@ -38,7 +39,7 @@
                             <span class="line_1"></span>
                             <span class="line_2"></span>
                         </section>
-                        <ul>
+                        <ul class="sidebar__menu--navigation">
                             <li><a href="#"><span class="home"></span>
                                 Home</a></li>
                             <li><a href="#"><span class="settings"></span>
@@ -54,6 +55,16 @@
                                 <option value="Spanish">Spanish</option>
                             </select>
                         </section>
+                        <ul class="sidebar__contact--list">
+                            <li>
+                                <a href="#"><i class="far fa-envelope"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fab fa-github"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin"></i></a></li>
+                             <li>
+                                  <a href="#"><i class="fab fa-instagram"></i></a></li> 
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -1127,7 +1138,7 @@
                                         </div>
                                             <section class="information">
                                                 <div class="information__container">
-                                                    <h3>Por qué los AGUJEROS NEGROS son ESFERAS</h3>
+                                                    <h3>Por qué los AGUJEROS NEGROS <br> son ESFERAS</h3>
                                                     <div class="information__container--text">
                                                         <p>By: El Robot de Platón</p>
                                                         <p>Length: 12:31</p>
@@ -1451,9 +1462,21 @@
     <footer id="footer">
         <div class="contact">
             <p>Contact me:</p>
-            <div class="logos">
-                <a href="#"><i class="fa-light fa-envelope"></i></a>
-            </div>
+            <ul class="contact__list">
+                <li>
+                    <a href="#"><i class="far fa-envelope"></i>e-mail</a></li>
+                <li>
+                    <a href="#"><i class="fab fa-github"></i>GitHub</a></li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>       
+            </ul>
+        </div>
+        <div class="politics">
+            <a href="#">Reasons of existence</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
         </div>
     </footer>
 
