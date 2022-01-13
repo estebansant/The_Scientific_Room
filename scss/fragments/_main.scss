@@ -1,5 +1,5 @@
 main{
-    height: 80vh;
+    min-height: calc(100vh - 63px - 80px);
     width: 100vw;
     min-width: 320px;
 }

@@ -1,0 +1,12 @@
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: $secondary_purple;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    & p{
+        color: $white;
+    }
+}
