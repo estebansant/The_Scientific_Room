@@ -1,5 +1,6 @@
 footer{
     display: flex;
+    justify-content: space-evenly;
     height: 15vh;
     width: 100%;
     background-color: $secondary_purple;
@@ -7,16 +8,16 @@ footer{
 .contact{
     width: fit-content;
     height: inherit;
-    margin-top: 15px;
-    & p{
-        padding-top: 15px;
-        padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__title{
         color: $white;
         font-size: 1.6rem;
         font-family: 'Roboto';
         font-weight: 700;
     }
-    & ul{
+    &__list{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -26,13 +27,16 @@ footer{
             width: fit-content;
             height: fit-content;
             font-size: 1.6rem;
-            padding-top: 12px;
-            padding-left: 15px;
+            padding-top: 8px;
             color: $main-gray;
             & a{
                 color: $white;
                 & i{
-                    padding-right: 8px;
+                    padding-right: 35px;
+                    font-size: 2.2rem;
+                }
+                & p{
+                    display: none;
                 }
             }
         }
@@ -45,8 +49,6 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
-    position: absolute;
-    right: 15px;
     & a{
         color: $white;
         font-size: 1.6rem;

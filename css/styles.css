@@ -364,16 +364,15 @@ main {
   height: 20px;
   background-color: black;
   border-bottom-left-radius: 8px; }
-
-/* line 47, scss/fragments/_carousel.scss */
-.language p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 1.4rem; }
+  /* line 46, scss/fragments/_carousel.scss */
+  .language p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.4rem; }
 
 /* line 56, scss/fragments/_carousel.scss */
 .swiper-button-next, .swiper-button-prev {
@@ -456,60 +455,62 @@ main {
 /* line 1, scss/fragments/_footer.scss */
 footer {
   display: flex;
+  justify-content: space-evenly;
   height: 15vh;
   width: 100%;
   background-color: #010039; }
 
-/* line 7, scss/fragments/_footer.scss */
+/* line 8, scss/fragments/_footer.scss */
 .contact {
   width: fit-content;
   height: inherit;
-  margin-top: 15px; }
-  /* line 11, scss/fragments/_footer.scss */
-  .contact p {
-    padding-top: 15px;
-    padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  /* line 14, scss/fragments/_footer.scss */
+  .contact__title {
     color: #FFFFFF;
     font-size: 1.6rem;
     font-family: 'Roboto';
     font-weight: 700; }
-  /* line 19, scss/fragments/_footer.scss */
-  .contact ul {
+  /* line 20, scss/fragments/_footer.scss */
+  .contact__list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer; }
-    /* line 25, scss/fragments/_footer.scss */
-    .contact ul li {
+    /* line 26, scss/fragments/_footer.scss */
+    .contact__list li {
       width: fit-content;
       height: fit-content;
       font-size: 1.6rem;
-      padding-top: 12px;
-      padding-left: 15px;
+      padding-top: 8px;
       color: #C4C4C4; }
       /* line 32, scss/fragments/_footer.scss */
-      .contact ul li a {
+      .contact__list li a {
         color: #FFFFFF; }
         /* line 34, scss/fragments/_footer.scss */
-        .contact ul li a i {
-          padding-right: 8px; }
+        .contact__list li a i {
+          padding-right: 35px;
+          font-size: 2.2rem; }
+        /* line 38, scss/fragments/_footer.scss */
+        .contact__list li a p {
+          display: none; }
 
-/* line 41, scss/fragments/_footer.scss */
+/* line 45, scss/fragments/_footer.scss */
 .politics {
   height: inherit;
   width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-end;
-  position: absolute;
-  right: 15px; }
-  /* line 50, scss/fragments/_footer.scss */
+  align-items: flex-end; }
+  /* line 52, scss/fragments/_footer.scss */
   .politics a {
     color: #FFFFFF;
     font-size: 1.6rem; }
 
-/* line 55, scss/fragments/_footer.scss */
+/* line 57, scss/fragments/_footer.scss */
 footer a:hover {
   text-decoration: underline; }
