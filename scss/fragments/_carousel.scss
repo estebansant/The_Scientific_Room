@@ -43,15 +43,15 @@
     height: 20px;
     background-color: black;
     border-bottom-left-radius: $border-radius;
-}
-.language p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $white;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 1.4rem;
+    & p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
 }
 .swiper-button-next, .swiper-button-prev{
     color: $white;

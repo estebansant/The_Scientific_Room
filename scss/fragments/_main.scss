@@ -2,11 +2,7 @@ main{
     min-height: calc(100vh - 63px - 90px);
     width: 100vw;
     min-width: 320px;
-}
-hr{
-    width: 0px;
-    height: 0px;
-    border: 0px;
+    margin-top: 80px;
 }
 .title h2{
     display: flex;
@@ -31,8 +27,4 @@ hr{
     margin-top: .4rem;
     font-size: 1.6rem;
     color: $main-gray;
-}
-footer{
-    width: 100%;
-    height: 5rem;
 }

@@ -283,175 +283,155 @@ header {
   font-size: 2rem;
   color: #C4C4C4; }
 
-/* line 1, scss/fragments/_main.scss */
+/* line 1, scss/fragments/videos/_videos.scss */
 main {
   min-height: calc(100vh - 63px - 90px);
   width: 100vw;
   min-width: 320px;
   margin-top: 80px; }
 
-/* line 7, scss/fragments/_main.scss */
-.title h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 2.5rem;
-  font-size: 3.4rem;
-  width: 310px;
-  height: 80px;
-  color: white; }
+/* line 7, scss/fragments/videos/_videos.scss */
+#content {
+  z-index: 900;
+  height: 100%;
+  width: 100%; }
 
-/* line 19, scss/fragments/_main.scss */
-.title h3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 264px;
-  height: 35px;
-  margin-top: .4rem;
-  font-size: 1.6rem;
-  color: #C4C4C4; }
+/* line 12, scss/fragments/videos/_videos.scss */
+.video {
+  max-width: 885px;
+  min-width: none;
+  max-height: 498px;
+  padding-top: 10px; }
 
-/* line 1, scss/fragments/_carousel.scss */
-.carousel {
-  padding-left: 1rem;
+/* line 18, scss/fragments/videos/_videos.scss */
+.iframe__container {
   position: relative;
-  width: 100vw;
-  height: 380px;
-  overflow: hidden; }
-  /* line 7, scss/fragments/_carousel.scss */
-  .carousel__title {
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 28.13px;
-    margin: 40px 0 8px 6vw;
-    color: #FFFFFF; }
-
-/* line 15, scss/fragments/_carousel.scss */
-.carousel__container {
   width: 100%;
-  height: fit-content;
-  margin-top: 15px;
-  padding: 0 5%; }
-  /* line 20, scss/fragments/_carousel.scss */
-  .carousel__container .swiper-container {
-    width: 100%; }
-    /* line 22, scss/fragments/_carousel.scss */
-    .carousel__container .swiper-container .swiper-slide {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      border-radius: 8px; }
-      /* line 27, scss/fragments/_carousel.scss */
-      .carousel__container .swiper-container .swiper-slide .carousel__item--img {
-        width: 100%;
-        height: 100%;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        object-fit: cover; }
+  padding-bottom: 56.25%;
+  height: 0; }
 
-/* line 37, scss/fragments/_carousel.scss */
-.language {
-  display: inline-block;
+/* line 24, scss/fragments/videos/_videos.scss */
+.iframe__container iframe {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 40px;
-  height: 20px;
-  background-color: black;
-  border-bottom-left-radius: 8px; }
-
-/* line 47, scss/fragments/_carousel.scss */
-.language p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 1.4rem; }
-
-/* line 56, scss/fragments/_carousel.scss */
-.swiper-button-next, .swiper-button-prev {
-  color: #FFFFFF;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  top: 50%;
-  bottom: 0;
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-/* line 66, scss/fragments/_carousel.scss */
-.swiper-button-next {
-  right: 1%; }
-
-/* line 69, scss/fragments/_carousel.scss */
-.swiper-button-prev {
-  left: 4px; }
-
-/* line 72, scss/fragments/_carousel.scss */
-.swiper-button-next::after, .swiper-button-prev::after {
-  font-weight: bold;
-  font-size: 3vh;
-  transition: transform 0.1s ease-out; }
-
-/* line 78, scss/fragments/_carousel.scss */
-.carousel img {
-  max-width: 100%;
-  height: auto; }
-
-/* line 82, scss/fragments/_carousel.scss */
-.carousel .swiper-slide {
-  transition: 250ms all; }
-  /* line 85, scss/fragments/_carousel.scss */
-  .carousel .swiper-slide:hover {
-    transform: scale(1.2);
-    z-index: 1; }
-
-/* line 91, scss/fragments/_carousel.scss */
-.information {
-  position: relative;
-  top: -2px;
+  left: 0;
   width: 100%;
-  background-color: #FFFFFF;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  padding: 10px;
-  z-index: -10; }
-  /* line 100, scss/fragments/_carousel.scss */
-  .information h3 {
-    display: block;
+  height: 100%; }
+
+/* line 31, scss/fragments/videos/_videos.scss */
+.information {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  background-color: #261F2D; }
+  /* line 38, scss/fragments/videos/_videos.scss */
+  .information__title {
+    padding-left: calc(0% + 2%); }
+    /* line 40, scss/fragments/videos/_videos.scss */
+    .information__title h1 {
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 2rem;
+      margin: 0 auto; }
+  /* line 47, scss/fragments/videos/_videos.scss */
+  .information__creator {
+    margin-top: 15px;
+    margin-left: calc(100% - 50%);
+    width: 48%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex; }
+    /* line 55, scss/fragments/videos/_videos.scss */
+    .information__creator p {
+      color: #261F2D;
+      font-weight: 400;
+      font-size: 1.4rem;
+      margin: 0 auto;
+      justify-content: center; }
+  /* line 63, scss/fragments/videos/_videos.scss */
+  .information__description {
+    padding-left: calc(0% + 2%);
+    width: 100%;
+    height: 100%; }
+    /* line 67, scss/fragments/videos/_videos.scss */
+    .information__description p {
+      color: #FFFFFF;
+      font-size: 1.4rem;
+      padding-top: 15px;
+      margin-bottom: 15px; }
+
+/* line 75, scss/fragments/videos/_videos.scss */
+.recommended {
+  width: 100%;
+  height: 100%;
+  background-color: #261F2D;
+  position: relative; }
+  /* line 80, scss/fragments/videos/_videos.scss */
+  .recommended__title {
     font-size: 1.6rem;
     font-weight: 700;
-    color: black; }
-  /* line 106, scss/fragments/_carousel.scss */
-  .information .information__container--text {
-    padding-top: 5px;
+    margin-left: 12px;
+    color: #FFFFFF; }
+  /* line 86, scss/fragments/videos/_videos.scss */
+  .recommended__video {
     display: flex;
-    justify-content: space-between; }
-    /* line 110, scss/fragments/_carousel.scss */
-    .information .information__container--text p {
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: #261F2D; }
-
-/* line 117, scss/fragments/_carousel.scss */
-.swiper-slide:hover ~ .swiper-slide {
-  transform: translate3d(25px, 0, 0, 25px); }
-
-/* line 121, scss/fragments/_carousel.scss */
-.swiper-wrapper:hover .swiper-slide {
-  opacity: 0.5; }
-
-/* line 124, scss/fragments/_carousel.scss */
-.swiper-wrapper:hover .swiper-slide:hover {
-  transform: scale(1.2);
-  opacity: 1; }
+    flex-direction: row;
+    margin-top: 15px; }
+    /* line 90, scss/fragments/videos/_videos.scss */
+    .recommended__video a img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover; }
+    /* line 96, scss/fragments/videos/_videos.scss */
+    .recommended__video .language {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 20px;
+      background-color: black;
+      border-bottom-right-radius: 8px; }
+      /* line 105, scss/fragments/videos/_videos.scss */
+      .recommended__video .language p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 1.4rem; }
+    /* line 115, scss/fragments/videos/_videos.scss */
+    .recommended__video .description {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 2px;
+      width: 100%;
+      background-color: #FFFFFF;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 10px; }
+      /* line 125, scss/fragments/videos/_videos.scss */
+      .recommended__video .description h3 {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: black; }
+      /* line 131, scss/fragments/videos/_videos.scss */
+      .recommended__video .description__container--text {
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between; }
+        /* line 135, scss/fragments/videos/_videos.scss */
+        .recommended__video .description__container--text p {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: #261F2D; }
 
 /* line 1, scss/fragments/_footer.scss */
 footer {
