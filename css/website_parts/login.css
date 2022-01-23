@@ -285,175 +285,146 @@ header {
   font-size: 2rem;
   color: #C4C4C4; }
 
-/* line 1, scss/fragments/_main.scss */
+/* line 1, scss/fragments/_login.scss */
 main {
   min-height: calc(100vh - 63px - 15vh);
   width: 100vw;
   min-width: 320px;
-  margin-top: 80px;
-  margin-bottom: 30px; }
+  margin-top: 80px; }
 
-/* line 8, scss/fragments/_main.scss */
-.title h2 {
+/* line 7, scss/fragments/_login.scss */
+.login {
+  background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px 30px 0px;
+  min-height: calc(100vh - 200px); }
+
+/* line 16, scss/fragments/_login.scss */
+.login__container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: transparent;
+  border: none;
+  padding: 0px 30px;
+  min-height: 700px;
+  width: 100%;
+  box-shadow: none; }
+  /* line 26, scss/fragments/_login.scss */
+  .login__container h2 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: 700; }
+
+/* line 32, scss/fragments/_login.scss */
+.login__container--form {
+  display: flex;
+  flex-direction: column; }
+
+/* line 36, scss/fragments/_login.scss */
+.login__container--remember-me {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 2.5rem;
-  font-size: 3.4rem;
-  width: 310px;
-  height: 80px;
+  margin-top: 10px;
+  color: #C4C4C4; }
+  /* line 42, scss/fragments/_login.scss */
+  .login__container--remember-me label {
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    /* line 48, scss/fragments/_login.scss */
+    .login__container--remember-me label p {
+      padding-left: 5px; }
+  /* line 52, scss/fragments/_login.scss */
+  .login__container--remember-me a {
+    text-decoration: none;
+    color: #C4C4C4;
+    font-size: 1.6rem; }
+  /* line 57, scss/fragments/_login.scss */
+  .login__container--remember-me a:hover {
+    text-decoration: underline; }
+
+/* line 61, scss/fragments/_login.scss */
+.login__container--social-media > div > img {
+  width: 28px;
+  margin-right: 8px;
+  height: 32px; }
+
+/* line 66, scss/fragments/_login.scss */
+.login__container--social-media div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; }
+  /* line 71, scss/fragments/_login.scss */
+  .login__container--social-media div i {
+    color: #FFFFFF;
+    font-size: 2.2rem; }
+  /* line 75, scss/fragments/_login.scss */
+  .login__container--social-media div p {
+    font-size: 1.8rem;
+    color: #C4C4C4;
+    font-weight: 500;
+    padding-left: 8px; }
+
+/* line 82, scss/fragments/_login.scss */
+.login__container--register {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  /* line 87, scss/fragments/_login.scss */
+  .login__container--register a {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none; }
+  /* line 93, scss/fragments/_login.scss */
+  .login__container--register p {
+    color: #C4C4C4;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-right: 3px; }
+
+/* line 101, scss/fragments/_login.scss */
+.login__container--register a:hover {
+  text-decoration: underline; }
+
+/* line 104, scss/fragments/_login.scss */
+.input {
+  background-color: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid white;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  height: 50px; }
+
+/* line 117, scss/fragments/_login.scss */
+.input::placeholder {
   color: white; }
 
-/* line 20, scss/fragments/_main.scss */
-.title h3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 264px;
-  height: 35px;
-  margin-top: .4rem;
-  font-size: 1.6rem;
-  color: #C4C4C4; }
-
-/* line 1, scss/fragments/_carousel.scss */
-.carousel {
-  padding-left: 1rem;
-  position: relative;
-  width: 100vw;
-  height: 380px;
-  overflow: hidden; }
-  /* line 7, scss/fragments/_carousel.scss */
-  .carousel__title {
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 28.13px;
-    margin: 40px 0 8px 6vw;
-    color: #FFFFFF; }
-
-/* line 15, scss/fragments/_carousel.scss */
-.carousel__container {
-  width: 100%;
-  height: fit-content;
-  margin-top: 15px;
-  padding: 0 5%; }
-  /* line 20, scss/fragments/_carousel.scss */
-  .carousel__container .swiper-container {
-    width: 100%; }
-    /* line 22, scss/fragments/_carousel.scss */
-    .carousel__container .swiper-container .swiper-slide {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      border-radius: 8px; }
-      /* line 27, scss/fragments/_carousel.scss */
-      .carousel__container .swiper-container .swiper-slide .carousel__item--img {
-        width: 100%;
-        height: 100%;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        object-fit: cover; }
-
-/* line 37, scss/fragments/_carousel.scss */
-.language {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 20px;
-  background-color: black;
-  border-bottom-left-radius: 8px; }
-  /* line 46, scss/fragments/_carousel.scss */
-  .language p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 1.4rem; }
-
-/* line 56, scss/fragments/_carousel.scss */
-.swiper-button-next, .swiper-button-prev {
-  color: #FFFFFF;
-  border-radius: 50%;
+/* line 120, scss/fragments/_login.scss */
+.button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  font-size: 1.8rem;
   height: 50px;
-  width: 50px;
-  top: 50%;
-  bottom: 0;
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-/* line 66, scss/fragments/_carousel.scss */
-.swiper-button-next {
-  right: 1%; }
-
-/* line 69, scss/fragments/_carousel.scss */
-.swiper-button-prev {
-  left: 4px; }
-
-/* line 72, scss/fragments/_carousel.scss */
-.swiper-button-next::after, .swiper-button-prev::after {
-  font-weight: bold;
-  font-size: 3vh;
-  transition: transform 0.1s ease-out; }
-
-/* line 78, scss/fragments/_carousel.scss */
-.carousel img {
-  max-width: 100%;
-  height: auto; }
-
-/* line 82, scss/fragments/_carousel.scss */
-.carousel .swiper-slide {
-  transition: 250ms all; }
-  /* line 85, scss/fragments/_carousel.scss */
-  .carousel .swiper-slide:hover {
-    transform: scale(1.2);
-    z-index: 1; }
-
-/* line 91, scss/fragments/_carousel.scss */
-.information {
-  position: relative;
-  top: -2px;
-  width: 100%;
-  background-color: #FFFFFF;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  padding: 10px;
-  z-index: -10; }
-  /* line 100, scss/fragments/_carousel.scss */
-  .information h3 {
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: black; }
-  /* line 106, scss/fragments/_carousel.scss */
-  .information .information__container--text {
-    padding-top: 5px;
-    display: flex;
-    justify-content: space-between; }
-    /* line 110, scss/fragments/_carousel.scss */
-    .information .information__container--text p {
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: #261F2D; }
-
-/* line 117, scss/fragments/_carousel.scss */
-.swiper-slide:hover ~ .swiper-slide {
-  transform: translate3d(25px, 0, 0, 25px); }
-
-/* line 121, scss/fragments/_carousel.scss */
-.swiper-wrapper:hover .swiper-slide {
-  opacity: 0.5; }
-
-/* line 124, scss/fragments/_carousel.scss */
-.swiper-wrapper:hover .swiper-slide:hover {
-  transform: scale(1.2);
-  opacity: 1; }
+  letter-spacing: 1px;
+  margin: 20px 0; }
 
 /* line 1, scss/fragments/_footer.scss */
 footer {

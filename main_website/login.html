@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/Icons/tubo_de_ensayo2.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/login.css"/>
+    <link rel="stylesheet" href="../css/media_queries/footer360.css" media="(min-width: 359px)" />
+    <link rel="stylesheet" href="../css/media_queries/login/tablet768.css" media="(min-width: 767px)" />
+    <title>Log In</title>
+    <script src="https://kit.fontawesome.com/9e88cc989b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section class="opacity" id="op">
+        <div class="header__logo">
+            <a href="../index.html" class="header__logo--container">
+                <img src="../images/Icons/tubo_de_ensayo.svg" alt="Logo" />
+                <h1 class="header__logo--title">The Scientific <br> Room</h1>
+            </a>
+        </div>
+        </section>
+
+        <section class="container">
+
+            <button class="menu" onclick="openNav()"></button>
+
+            <div class="header__sidebar" id="sidebar">
+                <div class="sidebar__menu">
+                    <button class="x" onclick="closeNav()"></button>
+                    <section class="sidebar__menu--button">
+                        <a href="./main_website/login.html" class="menu--button">Log In</a>
+                        <a href="#" class="menu--button">Sign Up</a>
+                    </section>
+                    <section class="sidebar__lines">
+                        <span class="line_1"></span>
+                        <span class="line_2"></span>
+                    </section>
+                    <ul class="sidebar__menu--navigation">
+                        <li><a href="#"><span class="home"></span>
+                            Home</a></li>
+                        <li><a href="#"><span class="settings"></span>
+                            Settings</a></li>
+                        <li><a href="#"><span class="questions">?</span>
+                            Help and questions</a></li>
+                    </ul>
+                    <span class="line_3"></span>
+                    <section class="sidebar__language">
+                        <p class="sidebar__language--text">Change language</p>
+                        <select name="language" class="sidebar__language--select">
+                            <option value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                        </select>
+                    </section>
+                    <ul class="sidebar__contact--list">
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
+                        <li>
+                            <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="content">
+            <section class="login">
+                <div class="login__container">   
+                    <h2>Log In</h2>
+                    <form class="login__container--form">
+                        <input type="text" class="input" placeholder="E-Mail"/>
+                        <input type="password" class="input" placeholder="Password"/>
+                        <button class="button">Log In</button>
+                        <div class="login__container--remember-me">
+                            <label>
+                                <input type="checkbox" name="" id="box1" value="checkbox"/>
+                                <p>Remember me</p>
+                            </label>
+                            <a href="/">I forgot my password</a>
+                        </div>
+                    </form>
+                    <section class="login__container--social-media">
+                        <div><i class="fab fa-google"></i><p>Log in with Google</p></div>
+                        <div><i class="fab fa-twitter"></i><p>Log in with Twitter</p></div>
+                    </section>
+                    <div class="login__container--register"><p>Don't have an account?</p> <a href="/">Sign Up</a></div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="contact">
+            <p class="contact__title">Contact me:</p>
+            <ul class="contact__list">
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i><p>E-Mail</p></a></li>
+                <li>
+                    <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><p>GitHub</p></a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i><p>LinkedIn</p></a></li> 
+            </ul>
+        </div>
+        <div class="politics">
+            <a href="#">Reasons of existence</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </footer>
+    <script src="../index.js"></script>
+</body>
+</html>

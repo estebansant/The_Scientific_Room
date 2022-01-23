@@ -1,8 +1,9 @@
 main{
-    min-height: calc(100vh - 63px - 90px);
+    min-height: calc(100vh - 63px - 15vh);
     width: 100vw;
     min-width: 320px;
     margin-top: 80px;
+    margin-bottom: 30px;
 }
 .title h2{
     display: flex;

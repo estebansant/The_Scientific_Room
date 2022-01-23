@@ -140,6 +140,9 @@ header {
   margin-bottom: 14px; }
   /* line 46, scss/fragments/_sidebar.scss */
   .sidebar__menu--button .menu--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 88px;
     height: 34px;
     background-color: #8933FF;
@@ -148,37 +151,36 @@ header {
     color: #FFFFFF;
     font-size: 1.6rem;
     line-height: 16.41px;
-    text-align: center;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25); }
-  /* line 58, scss/fragments/_sidebar.scss */
+  /* line 60, scss/fragments/_sidebar.scss */
   .sidebar__menu--button .menu--button:hover {
     box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer; }
 
-/* line 63, scss/fragments/_sidebar.scss */
+/* line 65, scss/fragments/_sidebar.scss */
 .sidebar__lines {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 16px; }
-  /* line 69, scss/fragments/_sidebar.scss */
+  /* line 71, scss/fragments/_sidebar.scss */
   .sidebar__lines .line_1 {
     width: 100%;
     height: 0px;
     border-bottom: 3px solid #000000; }
-  /* line 74, scss/fragments/_sidebar.scss */
+  /* line 76, scss/fragments/_sidebar.scss */
   .sidebar__lines .line_2 {
     width: 100%;
     height: 0px;
     border-bottom: 3px solid #000000; }
 
-/* line 80, scss/fragments/_sidebar.scss */
+/* line 82, scss/fragments/_sidebar.scss */
 .sidebar__menu--navigation {
   display: flex;
   flex-direction: column; }
 
-/* line 84, scss/fragments/_sidebar.scss */
+/* line 86, scss/fragments/_sidebar.scss */
 .sidebar__menu--navigation .home {
   width: 36px;
   height: 37px;
@@ -188,14 +190,14 @@ header {
   background-repeat: no-repeat;
   margin-right: 15px; }
 
-/* line 93, scss/fragments/_sidebar.scss */
+/* line 95, scss/fragments/_sidebar.scss */
 .sidebar__menu--navigation .settings {
   width: 36px;
   height: 37px;
   background-image: url(../images/Icons/settings_icon.svg);
   margin-right: 15px; }
 
-/* line 100, scss/fragments/_sidebar.scss */
+/* line 102, scss/fragments/_sidebar.scss */
 .sidebar__menu--navigation .questions {
   width: 18px;
   height: 37px;
@@ -207,7 +209,7 @@ header {
   align-self: center;
   margin-top: -10px; }
 
-/* line 111, scss/fragments/_sidebar.scss */
+/* line 113, scss/fragments/_sidebar.scss */
 .sidebar__menu--navigation a {
   display: flex;
   align-items: center;
@@ -220,28 +222,28 @@ header {
   padding-bottom: 10px;
   padding-left: 18px; }
 
-/* line 123, scss/fragments/_sidebar.scss */
+/* line 125, scss/fragments/_sidebar.scss */
 .sidebar__menu--navigation a:hover {
   padding-left: 22px;
   cursor: pointer; }
 
-/* line 127, scss/fragments/_sidebar.scss */
+/* line 129, scss/fragments/_sidebar.scss */
 .sidebar__menu .line_3 {
   display: flex;
   margin-top: 12px;
   width: 100%;
   border-bottom: 3px solid #000000; }
 
-/* line 133, scss/fragments/_sidebar.scss */
+/* line 135, scss/fragments/_sidebar.scss */
 .sidebar__language {
   display: flex;
   flex-direction: column; }
-  /* line 136, scss/fragments/_sidebar.scss */
+  /* line 138, scss/fragments/_sidebar.scss */
   .sidebar__language .sidebar__language--text {
     margin: 12px 0 8px 22px;
     color: #C4C4C4;
     font-size: 1.8rem; }
-  /* line 141, scss/fragments/_sidebar.scss */
+  /* line 143, scss/fragments/_sidebar.scss */
   .sidebar__language .sidebar__language--select {
     margin: 0 0 0 22px;
     width: 130px;
@@ -250,25 +252,25 @@ header {
     border: 2px solid #C4C4C4;
     color: #FFFFFF;
     font-size: 1.6rem; }
-    /* line 149, scss/fragments/_sidebar.scss */
+    /* line 151, scss/fragments/_sidebar.scss */
     .sidebar__language .sidebar__language--select .sidebar__language--select option {
       font-size: 1.6rem; }
 
-/* line 154, scss/fragments/_sidebar.scss */
+/* line 156, scss/fragments/_sidebar.scss */
 .sidebar__language--select:hover {
   cursor: pointer; }
 
-/* line 157, scss/fragments/_sidebar.scss */
+/* line 159, scss/fragments/_sidebar.scss */
 #check:checked ~ label #menu {
   right: 250px;
   opacity: 0%;
   pointer-events: none; }
 
-/* line 162, scss/fragments/_sidebar.scss */
+/* line 164, scss/fragments/_sidebar.scss */
 #check:checked ~ label #x {
   left: 115px; }
 
-/* line 165, scss/fragments/_sidebar.scss */
+/* line 167, scss/fragments/_sidebar.scss */
 .sidebar__contact--list {
   width: 100%;
   position: absolute;
@@ -278,7 +280,7 @@ header {
   justify-content: space-evenly;
   align-items: center; }
 
-/* line 174, scss/fragments/_sidebar.scss */
+/* line 176, scss/fragments/_sidebar.scss */
 .sidebar__contact--list i {
   font-size: 2rem;
   color: #C4C4C4; }
@@ -541,7 +543,7 @@ footer {
         color: #FFFFFF; }
         /* line 34, scss/fragments/_footer.scss */
         .contact__list li a i {
-          padding-right: 35px;
+          padding-right: 25px;
           font-size: 2.2rem; }
         /* line 38, scss/fragments/_footer.scss */
         .contact__list li a p {
