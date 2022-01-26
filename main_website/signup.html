@@ -7,10 +7,10 @@
     <link rel="shortcut icon" href="../images/Icons/tubo_de_ensayo2.svg">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../css/login.css"/>
+    <link rel="stylesheet" href="../css/signup.css"/>
     <link rel="stylesheet" href="../css/media_queries/footer360.css" media="(min-width: 359px)" />
-    <link rel="stylesheet" href="../css/media_queries/login/tablet768.css" media="(min-width: 767px)" />
-    <title>Log In</title>
+    <link rel="stylesheet" href="../css/media_queries/signup/tablet768.css" media="(min-width: 767px)" />
+    <title>Sign Up</title>
     <script src="https://kit.fontawesome.com/9e88cc989b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -72,29 +72,19 @@
         <section id="content">
             <section class="login">
                 <div class="login__container">   
-                    <h2>Log In</h2>
+                    <h2>Regístrate</h2>
                     <form class="login__container--form">
-                        <input type="text" class="input" placeholder="E-Mail"/>
+                        <input type="text" class="input" placeholder="Name"/>
+                        <input type="mail" class="input" placeholder="E-mail"/>
                         <input type="password" class="input" placeholder="Password"/>
-                        <a href="../index.html" class="button">Log In</a>
-                        <div class="login__container--remember-me">
-                            <label>
-                                <input type="checkbox" name="" id="box1" value="checkbox"/>
-                                <p>Remember me</p>
-                            </label>
-                            <a href="/">I forgot my password</a>
-                        </div>
+                        <a href="../index.html" class="button">Sign me up!</a>
                     </form>
-                    <section class="login__container--social-media">
-                        <a href="/index.html"><i class="fab fa-google"></i><p>Log in with Google</p></a>
-                        <a href="/index.html"><i class="fab fa-twitter"></i><p>Log in with Twitter</p></a>
-                    </section>
-                    <div class="login__container--register"><p>Don't have an account?</p> <a href="./signup.html">Sign Up</a></div>
+                    <div class="login__container--register"><p>Do you already have an account created?</p><a href="./login.html">Inicia Sesión</a></div>
                 </div>
             </section>
         </section>
     </main>
-
+    
     <footer id="footer">
         <div class="contact">
             <p class="contact__title">Contact me:</p>
@@ -113,7 +103,7 @@
             <a href="#">Terms of Use</a>
         </div>
     </footer>
-    
+
     <script src="../index.js"></script>
 
 </body>

@@ -299,7 +299,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 30px 30px 0px;
+  padding: 0px 0px 30px 0px;
   min-height: calc(100vh - 200px); }
 
 /* line 16, scss/fragments/_login.scss */
@@ -351,80 +351,83 @@ main {
     text-decoration: underline; }
 
 /* line 61, scss/fragments/_login.scss */
-.login__container--social-media > div > img {
-  width: 28px;
-  margin-right: 8px;
-  height: 32px; }
-
-/* line 66, scss/fragments/_login.scss */
-.login__container--social-media div {
+.login__container--social-media a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px; }
-  /* line 71, scss/fragments/_login.scss */
-  .login__container--social-media div i {
+  margin-bottom: 10px;
+  color: #C4C4C4; }
+  /* line 67, scss/fragments/_login.scss */
+  .login__container--social-media a i {
     color: #FFFFFF;
     font-size: 2.2rem; }
-  /* line 75, scss/fragments/_login.scss */
-  .login__container--social-media div p {
+  /* line 71, scss/fragments/_login.scss */
+  .login__container--social-media a p {
     font-size: 1.8rem;
     color: #C4C4C4;
     font-weight: 500;
     padding-left: 8px; }
 
-/* line 82, scss/fragments/_login.scss */
+/* line 78, scss/fragments/_login.scss */
+.login__container--social-media a p:hover {
+  text-decoration: underline; }
+
+/* line 81, scss/fragments/_login.scss */
 .login__container--register {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center; }
-  /* line 87, scss/fragments/_login.scss */
+  /* line 86, scss/fragments/_login.scss */
   .login__container--register a {
     font-size: 1.8rem;
-    color: white;
+    color: #FFFFFF;
     font-weight: 600;
     text-decoration: none; }
-  /* line 93, scss/fragments/_login.scss */
+  /* line 92, scss/fragments/_login.scss */
   .login__container--register p {
     color: #C4C4C4;
     font-size: 1.4rem;
     font-weight: 500;
     padding-right: 3px; }
 
-/* line 101, scss/fragments/_login.scss */
+/* line 100, scss/fragments/_login.scss */
 .login__container--register a:hover {
   text-decoration: underline; }
 
-/* line 104, scss/fragments/_login.scss */
+/* line 103, scss/fragments/_login.scss */
 .input {
   background-color: transparent;
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #FFFFFF;
   outline: none;
   font-family: 'Mulish', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 20px;
   padding: 0px 20px;
-  height: 50px; }
+  height: 50px;
+  color: #FFFFFF; }
 
 /* line 117, scss/fragments/_login.scss */
 .input::placeholder {
-  color: white; }
+  color: #FFFFFF; }
 
 /* line 120, scss/fragments/_login.scss */
 .button {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
-  color: white;
+  color: #FFFFFF;
   cursor: pointer;
   border: 0;
   font-size: 1.8rem;
   height: 50px;
   letter-spacing: 1px;
-  margin: 20px 0; }
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /* line 1, scss/fragments/_footer.scss */
 footer {
