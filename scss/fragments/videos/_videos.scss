@@ -1,3 +1,6 @@
+body{
+    background: $gray-buttons;
+}
 main{
     min-height: calc(100vh - 63px - 90px);
     width: 100vw;
@@ -35,7 +38,6 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 8px;
-    background-color: $gray-buttons;
     &__title{
         margin-top: 12px;
         padding-left: calc(0% + 2%);
