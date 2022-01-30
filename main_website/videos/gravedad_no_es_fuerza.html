@@ -7,8 +7,10 @@
     <link rel="shortcut icon" href="../../images/Icons/tubo_de_ensayo2.svg">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../../css/videos.css">
+    <link rel="stylesheet" href="../../css/media_queries/footer360.css" media="(min-width: 359px)" />
     <link rel="stylesheet" href="../../css/media_queries/videos/tablet768.css" media="(min-width: 767px)" />
     <link rel="stylesheet" href="../../css/media_queries/videos/tablet930.css" media="(min-width: 929px)" />
+    <link rel="stylesheet" href="../../css/media_queries/videos/desktop1280.css" media="(min-width: 1279px)" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Gravity is not a force</title>
     <script src="https://kit.fontawesome.com/9e88cc989b.js" crossorigin="anonymous"></script>
@@ -54,14 +56,17 @@
                             <option value="Spanish">Spanish</option>
                         </select>
                     </section>
-                    <ul class="sidebar__contact--list">
-                        <li>
-                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
-                        <li>
-                            <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
+                    <section class="sidebar__contact">
+                        <h3 class="sidebar__contact--title">Contact me:</h3>
+                        <ul class="sidebar__contact--list">
+                            <li>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
+                            <li>
+                                <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </section>
                 </div>
             </div>
         </section>
@@ -325,16 +330,17 @@
             </section>
         </section>
     </main>
+
     <footer id="footer">
         <div class="contact">
             <p class="contact__title">Contact me:</p>
             <ul class="contact__list">
                 <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i>E-mail</a></li>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i><p>E-Mail</p></a></li>
                 <li>
-                    <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>GitHub</a></li>
+                    <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><p>GitHub</p></a></li>
                 <li>
-                    <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a></li> 
+                    <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i><p>LinkedIn</p></a></li> 
             </ul>
         </div>
         <div class="politics">
@@ -343,6 +349,7 @@
             <a href="#">Terms of Use</a>
         </div>
     </footer>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".swiper-container", {
@@ -351,11 +358,11 @@
             slidesPerGroup: 1,
             loop: true,
             speed: 500,
-            loopFillGroupWithBlank: true,
+            loopFillGroupWithBlank: false,
             pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            },
+                el: ".swiper-pagination",
+                clickable: true,
+                },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -368,6 +375,8 @@
                     slidesPerView: 3,
                 },
                 1280: {
+                    height: 1050,
+                    direction: "vertical",
                     slidesPerView: 4,
                     slidesPerGroup: 2,
                 }

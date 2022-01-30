@@ -14,21 +14,21 @@ main{
     min-width: none;
     max-height: 498px;
     padding-top: 10px;
-    margin: 0 auto;
+    margin: 3em auto;
 }
 .iframe__container{
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; 
     height: 0;
+    & iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
   }
-.iframe__container iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 .description{
     width: 100%;
     height: 100%;
@@ -48,8 +48,8 @@ main{
     }
     &__creator{
         margin-top: 15px;
-        margin-left: calc(100% - 50%);
-        width:48%;
+        margin-left: calc(100% - 56%);
+        width: 180px;
         height: 100%;
         background-color: $white;
         border-radius: 15px;

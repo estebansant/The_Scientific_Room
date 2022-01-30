@@ -1,0 +1,39 @@
+.video{
+    margin: 30px 15px 30px 15px;
+}
+.description{
+    width: 58.7%;
+}
+.description__creator{
+    margin-right: 500px;
+}
+.carousel{
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    width: 475px;
+    height: 100vh;
+    z-index: 100;
+}
+.carousel__container{
+    width: 350px;
+    height: 1400px;
+}
+.swiper-slide:hover~.swiper-slide {
+    transform: translate3d(0px, 25px, 25px, 0px);
+}
+.swiper-button-next,
+.swiper-button-prev {
+    left: 50%;
+    transform: rotate(90deg);
+    transform-origin: left center;
+}
+
+.swiper-button-prev {
+    top: 10px;
+}
+
+.swiper-button-next {
+    top: auto;
+    bottom: 10px;
+}

@@ -56,14 +56,17 @@
                                 <option value="Spanish">Spanish</option>
                             </select>
                         </section>
-                        <ul class="sidebar__contact--list">
-                            <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
-                            <li>
-                                <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
+                        <section class="sidebar__contact">
+                            <h3 class="sidebar__contact--title">Contact me:</h3>
+                            <ul class="sidebar__contact--list">
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
+                                <li>
+                                    <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </section>
                     </div>
                 </div>
             </section>
@@ -1486,7 +1489,7 @@
             slidesPerGroup: 1,
             loop: true,
             speed: 500,
-            loopFillGroupWithBlank: true,
+            loopFillGroupWithBlank: false,
             pagination: {
             el: ".swiper-pagination",
             clickable: true,
