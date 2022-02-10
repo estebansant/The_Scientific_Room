@@ -424,9 +424,10 @@ main {
   /* line 85, scss/fragments/_carousel.scss */
   .carousel .swiper-slide:hover {
     transform: scale(1.2);
-    z-index: 1; }
+    z-index: 1;
+    margin-left: 25px; }
 
-/* line 91, scss/fragments/_carousel.scss */
+/* line 92, scss/fragments/_carousel.scss */
 .information {
   position: relative;
   top: -2px;
@@ -436,26 +437,26 @@ main {
   border-bottom-right-radius: 8px;
   padding: 10px;
   z-index: -10; }
-  /* line 100, scss/fragments/_carousel.scss */
+  /* line 101, scss/fragments/_carousel.scss */
   .information h3 {
     display: block;
     font-size: 1.6rem;
     font-weight: 700;
     color: black; }
-  /* line 106, scss/fragments/_carousel.scss */
+  /* line 107, scss/fragments/_carousel.scss */
   .information .information__container--text {
     padding-top: 5px;
     display: flex;
     justify-content: space-between; }
-    /* line 110, scss/fragments/_carousel.scss */
+    /* line 111, scss/fragments/_carousel.scss */
     .information .information__container--text p {
       font-size: 1.4rem;
       font-weight: 500;
       color: #261F2D; }
 
-/* line 117, scss/fragments/_carousel.scss */
+/* line 118, scss/fragments/_carousel.scss */
 .swiper-slide:hover ~ .swiper-slide {
-  transform: translate3d(25px, 0, 0, 25px); }
+  transform: translate3d(25px, 0, 0); }
 
 /* line 121, scss/fragments/_carousel.scss */
 .swiper-wrapper:hover .swiper-slide {

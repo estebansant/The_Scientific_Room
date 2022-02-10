@@ -34,12 +34,16 @@
     left: 45%;
     transform: rotate(90deg);
 }
-
+.swiper-slide:hover{
+    margin-top: 25px;
+}
 .swiper-button-prev {
     top: 10px;
 }
-
 .swiper-button-next {
     top: auto;
     bottom: 10px;
+}
+.swiper-slide:hover~.swiper-slide{
+    transform: translate3d( 0, 25px, 0);
 }
