@@ -16,12 +16,12 @@
 <body>
     <header>
         <section class="opacity" id="op">
-        <div class="header__logo">
-            <a href="../index.html" class="header__logo--container">
-                <img src="../images/Icons/tubo_de_ensayo.svg" alt="Logo" />
-                <h1 class="header__logo--title">The Scientific <br> Room</h1>
-            </a>
-        </div>
+            <div class="header__logo">
+                <a href="../index.html" class="header__logo--container">
+                    <img src="../images/Icons/tubo_de_ensayo.svg" alt="Logo" />
+                    <h1 class="header__logo--title">The Scientific <br> Room</h1>
+                </a>
+            </div>
         </section>
 
         <section class="container">
@@ -40,7 +40,7 @@
                         <span class="line_2"></span>
                     </section>
                     <ul class="sidebar__menu--navigation">
-                        <li><a href="#"><span class="home"></span>
+                        <li><a href="../index.html"><span class="home"></span>
                             Home</a></li>
                         <li><a href="#"><span class="settings"></span>
                             Settings</a></li>
@@ -75,14 +75,33 @@
         <section id="content">
             <section class="login">
                 <div class="login__container">   
-                    <h2>Sign Up</h2>
+                    <h2>Log In</h2>
                     <form class="login__container--form">
-                        <input type="text" class="input" placeholder="Name"/>
-                        <input type="mail" class="input" placeholder="E-mail"/>
+                        <input type="text" class="input" placeholder="E-Mail"/>
                         <input type="password" class="input" placeholder="Password"/>
-                        <a href="../index.html" class="button">Sign me up!</a>
+                        <button data-popup-target="#popup" class="button" type="button">Log In</button>
+                        <div class="popup" id="popup">
+                            <button data-popup-close class="popup__close" type="button">&times;</button>
+                            <div class="popup__header">
+                                <h3>Disclaimer</h3>
+                            </div>
+                            <div class="popup__content">
+                                <p>Thanks for submitting your request! <br/> sadly this website has no backend, hence, it can't sign you up in the platform. <br/>  <br/> I encourage you to keep exploring the website to discover other features. <br/> <br/> Please click on the <strong> X </strong> button to close this frame.</p>
+                            </div>
+                        </div>
+                        <div class="login__container--remember-me">
+                            <label>
+                                <input type="checkbox" name="" id="box1" value="checkbox"/>
+                                <p>Remember me</p>
+                            </label>
+                            <a href="/">I forgot my password</a>
+                        </div>
                     </form>
-                    <div class="login__container--register"><p>Do you already have an account created?</p><a href="./login.html">Log In</a></div>
+                    <section class="login__container--social-media">
+                        <a href="/index.html"><i class="fab fa-google"></i><p>Log in with Google</p></a>
+                        <a href="/index.html"><i class="fab fa-twitter"></i><p>Log in with Twitter</p></a>
+                    </section>
+                    <div class="login__container--register"><p>Don't have an account?</p> <a href="./signup.html">Sign Up</a></div>
                 </div>
             </section>
         </section>
@@ -107,7 +126,10 @@
         </div>
     </footer>
 
+    <div id="overlay"></div>
+
     <script src="../index.js"></script>
+    <script src="./submit.js"></script>
 
 </body>
 </html>

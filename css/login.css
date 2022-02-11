@@ -320,93 +320,92 @@ main {
   flex-direction: column;
   background-color: transparent;
   border: none;
-  padding: 0px 30px;
   min-height: 700px;
   width: 100%;
   box-shadow: none; }
-  /* line 26, scss/fragments/_login.scss */
+  /* line 25, scss/fragments/_login.scss */
   .login__container h2 {
     font-size: 2rem;
     color: #FFFFFF;
     font-weight: 700; }
 
-/* line 32, scss/fragments/_login.scss */
+/* line 31, scss/fragments/_login.scss */
 .login__container--form {
   display: flex;
   flex-direction: column; }
 
-/* line 36, scss/fragments/_login.scss */
+/* line 35, scss/fragments/_login.scss */
 .login__container--remember-me {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
   color: #C4C4C4; }
-  /* line 42, scss/fragments/_login.scss */
+  /* line 41, scss/fragments/_login.scss */
   .login__container--remember-me label {
     font-size: 1.6rem;
     padding-bottom: 5px;
     display: flex;
     flex-direction: row;
     align-items: center; }
-    /* line 48, scss/fragments/_login.scss */
+    /* line 47, scss/fragments/_login.scss */
     .login__container--remember-me label p {
       padding-left: 5px; }
-  /* line 52, scss/fragments/_login.scss */
+  /* line 51, scss/fragments/_login.scss */
   .login__container--remember-me a {
     text-decoration: none;
     color: #C4C4C4;
     font-size: 1.6rem; }
-  /* line 57, scss/fragments/_login.scss */
+  /* line 56, scss/fragments/_login.scss */
   .login__container--remember-me a:hover {
     text-decoration: underline; }
 
-/* line 61, scss/fragments/_login.scss */
+/* line 60, scss/fragments/_login.scss */
 .login__container--social-media a {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
   color: #C4C4C4; }
-  /* line 67, scss/fragments/_login.scss */
+  /* line 66, scss/fragments/_login.scss */
   .login__container--social-media a i {
     color: #FFFFFF;
     font-size: 2.2rem; }
-  /* line 71, scss/fragments/_login.scss */
+  /* line 70, scss/fragments/_login.scss */
   .login__container--social-media a p {
     font-size: 1.8rem;
     color: #C4C4C4;
     font-weight: 500;
     padding-left: 8px; }
 
-/* line 78, scss/fragments/_login.scss */
+/* line 77, scss/fragments/_login.scss */
 .login__container--social-media a p:hover {
   text-decoration: underline; }
 
-/* line 81, scss/fragments/_login.scss */
+/* line 80, scss/fragments/_login.scss */
 .login__container--register {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center; }
-  /* line 86, scss/fragments/_login.scss */
+  /* line 85, scss/fragments/_login.scss */
   .login__container--register a {
     font-size: 1.8rem;
     color: #FFFFFF;
     font-weight: 600;
     text-decoration: none; }
-  /* line 92, scss/fragments/_login.scss */
+  /* line 91, scss/fragments/_login.scss */
   .login__container--register p {
     color: #C4C4C4;
     font-size: 1.4rem;
     font-weight: 500;
     padding-right: 3px; }
 
-/* line 100, scss/fragments/_login.scss */
+/* line 99, scss/fragments/_login.scss */
 .login__container--register a:hover {
   text-decoration: underline; }
 
-/* line 103, scss/fragments/_login.scss */
+/* line 102, scss/fragments/_login.scss */
 .input {
   background-color: transparent;
   border-top: 0;
@@ -421,24 +420,98 @@ main {
   height: 50px;
   color: #FFFFFF; }
 
-/* line 117, scss/fragments/_login.scss */
+/* line 116, scss/fragments/_login.scss */
 .input::placeholder {
   color: #FFFFFF; }
 
-/* line 120, scss/fragments/_login.scss */
+/* line 119, scss/fragments/_login.scss */
 .button {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
-  color: #FFFFFF;
   cursor: pointer;
   border: 0;
-  font-size: 1.8rem;
   height: 50px;
   letter-spacing: 1px;
   margin: 20px 0;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.8rem;
+  color: #FFFFFF; }
+
+/* line 134, scss/fragments/_login.scss */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 350ms ease-in-out;
+  background-color: #010039;
+  z-index: 100;
+  width: 90%;
+  min-height: calc(100vh - 63px - 15vh);
+  padding: 0px 30px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  /* line 151, scss/fragments/_login.scss */
+  .popup__close {
+    position: fixed;
+    top: 2%;
+    left: 90%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+    color: #C4C4C4;
+    font-weight: bold; }
+  /* line 163, scss/fragments/_login.scss */
+  .popup__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 0 50px; }
+    /* line 169, scss/fragments/_login.scss */
+    .popup__header h3 {
+      color: #C4C4C4;
+      font-size: 2.4rem;
+      font-weight: bold;
+      font-family: 'Mulish', sans-serif;
+      text-decoration: underline; }
+  /* line 177, scss/fragments/_login.scss */
+  .popup__content {
+    padding: 0px 8px;
+    color: #C4C4C4;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    text-align: center; }
+
+/* line 185, scss/fragments/_login.scss */
+.popup.active {
+  transform: translate(-50%, -50%) scale(1); }
+
+/* line 188, scss/fragments/_login.scss */
+#overlay {
+  position: fixed;
+  transition: 250ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none; }
+
+/* line 199, scss/fragments/_login.scss */
+#overlay.active {
+  pointer-events: all;
+  opacity: 1; }
 
 /* line 1, scss/fragments/_footer.scss */
 footer {

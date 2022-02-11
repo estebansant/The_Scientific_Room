@@ -35,3 +35,9 @@ footer{
 .politics a{
     font-size: 1.8rem;
 }
+.popup{
+    border: 2px solid white;
+    border-radius: 40px;
+    min-height: calc(100vh - 63px - 15vh);
+    width: 400px;
+}
