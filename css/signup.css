@@ -435,7 +435,8 @@ main {
   cursor: pointer;
   border: 0;
   font-size: 1.8rem;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   height: 50px;
   letter-spacing: 1px;
   margin: 20px 0;
@@ -443,7 +444,7 @@ main {
   align-items: center;
   justify-content: center; }
 
-/* line 137, scss/fragments/_signup.scss */
+/* line 138, scss/fragments/_signup.scss */
 .popup {
   position: fixed;
   top: 50%;
@@ -461,7 +462,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  /* line 154, scss/fragments/_signup.scss */
+  /* line 155, scss/fragments/_signup.scss */
   .popup__close {
     position: fixed;
     top: 2%;
@@ -473,21 +474,21 @@ main {
     font-size: 3rem;
     color: #C4C4C4;
     font-weight: bold; }
-  /* line 166, scss/fragments/_signup.scss */
+  /* line 167, scss/fragments/_signup.scss */
   .popup__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 0 0 50px; }
-    /* line 172, scss/fragments/_signup.scss */
+    /* line 173, scss/fragments/_signup.scss */
     .popup__header h3 {
       color: #C4C4C4;
       font-size: 2.4rem;
       font-weight: bold;
       font-family: 'Mulish', sans-serif;
       text-decoration: underline; }
-  /* line 180, scss/fragments/_signup.scss */
+  /* line 181, scss/fragments/_signup.scss */
   .popup__content {
     padding: 0px 8px;
     color: #C4C4C4;
@@ -495,11 +496,11 @@ main {
     font-family: 'Mulish', sans-serif;
     text-align: center; }
 
-/* line 188, scss/fragments/_signup.scss */
+/* line 189, scss/fragments/_signup.scss */
 .popup.active {
   transform: translate(-50%, -50%) scale(1); }
 
-/* line 191, scss/fragments/_signup.scss */
+/* line 192, scss/fragments/_signup.scss */
 #overlay {
   position: fixed;
   transition: 250ms ease-in-out;
@@ -511,7 +512,7 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none; }
 
-/* line 202, scss/fragments/_signup.scss */
+/* line 203, scss/fragments/_signup.scss */
 #overlay.active {
   pointer-events: all;
   opacity: 1; }

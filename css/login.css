@@ -436,11 +436,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   font-size: 1.8rem;
   color: #FFFFFF; }
 
-/* line 134, scss/fragments/_login.scss */
+/* line 135, scss/fragments/_login.scss */
 .popup {
   position: fixed;
   top: 50%;
@@ -458,7 +459,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  /* line 151, scss/fragments/_login.scss */
+  /* line 152, scss/fragments/_login.scss */
   .popup__close {
     position: fixed;
     top: 2%;
@@ -470,21 +471,21 @@ main {
     font-size: 3rem;
     color: #C4C4C4;
     font-weight: bold; }
-  /* line 163, scss/fragments/_login.scss */
+  /* line 164, scss/fragments/_login.scss */
   .popup__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 0 0 50px; }
-    /* line 169, scss/fragments/_login.scss */
+    /* line 170, scss/fragments/_login.scss */
     .popup__header h3 {
       color: #C4C4C4;
       font-size: 2.4rem;
       font-weight: bold;
       font-family: 'Mulish', sans-serif;
       text-decoration: underline; }
-  /* line 177, scss/fragments/_login.scss */
+  /* line 178, scss/fragments/_login.scss */
   .popup__content {
     padding: 0px 8px;
     color: #C4C4C4;
@@ -492,11 +493,11 @@ main {
     font-family: 'Mulish', sans-serif;
     text-align: center; }
 
-/* line 185, scss/fragments/_login.scss */
+/* line 186, scss/fragments/_login.scss */
 .popup.active {
   transform: translate(-50%, -50%) scale(1); }
 
-/* line 188, scss/fragments/_login.scss */
+/* line 189, scss/fragments/_login.scss */
 #overlay {
   position: fixed;
   transition: 250ms ease-in-out;
@@ -508,7 +509,7 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none; }
 
-/* line 199, scss/fragments/_login.scss */
+/* line 200, scss/fragments/_login.scss */
 #overlay.active {
   pointer-events: all;
   opacity: 1; }
