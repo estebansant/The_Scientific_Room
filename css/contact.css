@@ -320,21 +320,22 @@ main {
     color: #FFFFFF;
     font-size: 3.4rem;
     font-weight: bold;
-    text-align: left; }
-  /* line 23, scss/fragments/_contact.scss */
+    text-align: left;
+    margin: 20px 0px; }
+  /* line 24, scss/fragments/_contact.scss */
   .social__media--description {
     color: #C4C4C4;
     font-size: 1.8rem;
     text-align: left; }
 
-/* line 29, scss/fragments/_contact.scss */
+/* line 30, scss/fragments/_contact.scss */
 .social__media--container {
   width: 100%;
   background-color: #261F2D;
   height: 300px;
   margin-top: 25px;
   background-color: #201E1C; }
-  /* line 35, scss/fragments/_contact.scss */
+  /* line 36, scss/fragments/_contact.scss */
   .social__media--container .social__media--list {
     min-width: 288px;
     max-width: 450px;
@@ -343,7 +344,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     height: inherit; }
-    /* line 43, scss/fragments/_contact.scss */
+    /* line 44, scss/fragments/_contact.scss */
     .social__media--container .social__media--list li {
       width: 90%;
       height: 45px;
@@ -356,24 +357,25 @@ main {
       border-radius: 5px;
       color: #FFFFFF;
       font-size: 1.6rem; }
-      /* line 55, scss/fragments/_contact.scss */
+      /* line 56, scss/fragments/_contact.scss */
       .social__media--container .social__media--list li a {
         text-decoration: none;
         display: flex;
         flex-direction: row;
-        align-items: center; }
-        /* line 60, scss/fragments/_contact.scss */
+        align-items: center;
+        color: #FFFFFF; }
+        /* line 62, scss/fragments/_contact.scss */
         .social__media--container .social__media--list li a p {
           color: #FFFFFF;
           font-size: 1.6rem; }
 
-/* line 68, scss/fragments/_contact.scss */
+/* line 70, scss/fragments/_contact.scss */
 .social__media--list i {
   font-size: 2.2rem;
   padding-right: 12px;
   color: #FFFFFF; }
 
-/* line 73, scss/fragments/_contact.scss */
+/* line 75, scss/fragments/_contact.scss */
 .social__media--list li a:hover {
   text-decoration: underline; }
 
