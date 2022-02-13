@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/Icons/tubo_de_ensayo2.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../css/login.css"/>
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/media_queries/footer360.css" media="(min-width: 359px)" />
-    <link rel="stylesheet" href="../css/media_queries/login/tablet768.css" media="(min-width: 767px)" />
-    <title>Log In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>The Scientific Room | Home</title>
     <script src="https://kit.fontawesome.com/9e88cc989b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <section class="opacity" id="op">
-            <div class="header__logo">
-                <a href="../index.html" class="header__logo--container">
-                    <img src="../images/Icons/tubo_de_ensayo.svg" alt="Logo" />
-                    <h1 class="header__logo--title">The Scientific <br> Room</h1>
-                </a>
-            </div>
+        <div class="header__logo">
+            <a href="../index.html" class="header__logo--container">
+                <img src="../images/Icons/tubo_de_ensayo.svg" alt="Logo" />
+                <h1 class="header__logo--title">The Scientific <br> Room</h1>
+            </a>
+        </div>
         </section>
 
         <section class="container">
@@ -35,7 +34,6 @@
                         <a href="./login.html" class="menu--button">Log In</a>
                         <a href="./signup.html" class="menu--button">Sign Up</a>
                     </section>
-                    
                     <section class="sidebar__lines">
                         <span class="line_1"></span>
                         <span class="line_2"></span>
@@ -71,38 +69,32 @@
             </div>
         </section>
     </header>
-
+    
     <main>
         <section id="content">
-            <section class="login">
-                <div class="login__container">   
-                    <h2>Log In</h2>
-                    <form class="login__container--form">
-                        <input type="text" class="input" placeholder="E-Mail"/>
-                        <input type="password" class="input" placeholder="Password"/>
-                        <button data-popup-target="#popup" class="button" type="button">Log In</button>
-                        <div class="popup" id="popup">
-                            <button data-popup-close class="popup__close" type="button">&times;</button>
-                            <div class="popup__header">
-                                <h3>Disclaimer</h3>
-                            </div>
-                            <div class="popup__content">
-                                <p>Thanks for submitting your request! <br/> sadly this website has no backend, hence, it can't log you in the platform. <br/>  <br/> I encourage you to keep exploring the website to discover other features. <br/> <br/> Please click on the <strong> X </strong> button to close this frame.</p>
-                            </div>
-                        </div>
-                        <div class="login__container--remember-me">
-                            <label>
-                                <input type="checkbox" name="" id="box1" value="checkbox"/>
-                                <p>Remember me</p>
-                            </label>
-                            <a href="/">I forgot my password</a>
-                        </div>
-                    </form>
-                    <section class="login__container--social-media">
-                        <a href="../index.html"><i class="fab fa-google"></i><p>Log in with Google</p></a>
-                        <a href="../index.html"><i class="fab fa-twitter"></i><p>Log in with Twitter</p></a>
-                    </section>
-                    <div class="login__container--register"><p>Don't have an account?</p> <a href="./signup.html">Sign Up</a></div>
+            <section class="network">
+                <div class="social__media">
+                    <h2 class="social__media--title">Liked my work? <br/> Let's get in touch!</h2>
+                    <p class="social__media--description">To request a quote or contacting me for a job, leave me a message <br/> on any platform listed below and I will be answering shortly.</p>  
+                </div>
+                <div class="social__media--container">
+                    <ul class="social__media--list">
+                        <li>
+                            <i class="far fa-envelope"></i><p>estebansant30@gmail.com</p>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/esteban-s-25b76113a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i><p>Esteban Santiago Pizzani</p></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/estebansant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><p>/estebansant</p></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Esteban_sant30" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i><p>@Estebansant_30</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image__container">
+                    <span></span>
                 </div>
             </section>
         </section>
@@ -126,11 +118,7 @@
             <a href="#">Terms of Use</a>
         </div>
     </footer>
-    
-    <div id="overlay"></div>
 
     <script src="../index.js"></script>
-    <script src="./submit.js"></script>
-
 </body>
 </html>
