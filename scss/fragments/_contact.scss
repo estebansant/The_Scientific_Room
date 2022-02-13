@@ -28,6 +28,8 @@ main{
     }
 }
 .social__media--container{
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: $gray-buttons;
     height: 300px;
@@ -49,16 +51,20 @@ main{
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 8px srgb(0 0 0 / 16%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             border-radius: 5px;
             color: $white;
             font-size: 1.6rem;
             & a{
-                text-decoration: none;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 color: $white;
+                & i{
+                    font-size: 2.2rem;
+                    padding-right: 12px;
+                    color: $white;
+                }
                 & p{
                     color: $white;
                     font-size: 1.6rem;
@@ -67,11 +73,17 @@ main{
         }
     }
 }
-.social__media--list i {
-    font-size: 2.2rem;
-    padding-right: 12px;
-    color: $white;
-}
-.social__media--list li a:hover{
+.social__media--list li a:hover>p{
     text-decoration: underline;
+}
+.image__container{
+    min-width: 280px;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: -10px;
+    .image{
+        width: 100%;
+        height: auto;
+    }
 }

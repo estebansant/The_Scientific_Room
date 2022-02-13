@@ -330,12 +330,14 @@ main {
 
 /* line 30, scss/fragments/_contact.scss */
 .social__media--container {
+  display: flex;
+  justify-content: center;
   width: 100%;
   background-color: #261F2D;
   height: 300px;
   margin-top: 25px;
   background-color: #201E1C; }
-  /* line 36, scss/fragments/_contact.scss */
+  /* line 38, scss/fragments/_contact.scss */
   .social__media--container .social__media--list {
     min-width: 288px;
     max-width: 450px;
@@ -344,7 +346,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     height: inherit; }
-    /* line 44, scss/fragments/_contact.scss */
+    /* line 46, scss/fragments/_contact.scss */
     .social__media--container .social__media--list li {
       width: 90%;
       height: 45px;
@@ -353,31 +355,41 @@ main {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 8px srgb(0 0 0/16%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       border-radius: 5px;
       color: #FFFFFF;
       font-size: 1.6rem; }
-      /* line 56, scss/fragments/_contact.scss */
+      /* line 58, scss/fragments/_contact.scss */
       .social__media--container .social__media--list li a {
-        text-decoration: none;
         display: flex;
         flex-direction: row;
         align-items: center;
         color: #FFFFFF; }
-        /* line 62, scss/fragments/_contact.scss */
+        /* line 63, scss/fragments/_contact.scss */
+        .social__media--container .social__media--list li a i {
+          font-size: 2.2rem;
+          padding-right: 12px;
+          color: #FFFFFF; }
+        /* line 68, scss/fragments/_contact.scss */
         .social__media--container .social__media--list li a p {
           color: #FFFFFF;
           font-size: 1.6rem; }
 
-/* line 70, scss/fragments/_contact.scss */
-.social__media--list i {
-  font-size: 2.2rem;
-  padding-right: 12px;
-  color: #FFFFFF; }
-
-/* line 75, scss/fragments/_contact.scss */
-.social__media--list li a:hover {
+/* line 76, scss/fragments/_contact.scss */
+.social__media--list li a:hover > p {
   text-decoration: underline; }
+
+/* line 79, scss/fragments/_contact.scss */
+.image__container {
+  min-width: 280px;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: -10px; }
+  /* line 85, scss/fragments/_contact.scss */
+  .image__container .image {
+    width: 100%;
+    height: auto; }
 
 /* line 1, scss/fragments/_footer.scss */
 footer {
