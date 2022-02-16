@@ -310,7 +310,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 0px 30px 0px;
+  padding: 0px 30px;
   min-height: calc(100vh - 200px); }
 
 /* line 16, scss/fragments/_login.scss */
@@ -437,7 +437,7 @@ main {
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.8rem;
   color: #FFFFFF; }
 
@@ -448,8 +448,9 @@ main {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 350ms ease-in-out;
+  min-height: calc(100vh - 200px);
   background-color: #010039;
-  z-index: 100;
+  z-index: 10002;
   width: 90%;
   min-height: calc(100vh - 63px - 15vh);
   padding: 0px 30px;
@@ -459,7 +460,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  /* line 152, scss/fragments/_login.scss */
+  /* line 153, scss/fragments/_login.scss */
   .popup__close {
     position: fixed;
     top: 2%;
@@ -471,21 +472,21 @@ main {
     font-size: 3rem;
     color: #C4C4C4;
     font-weight: bold; }
-  /* line 164, scss/fragments/_login.scss */
+  /* line 165, scss/fragments/_login.scss */
   .popup__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 0 0 50px; }
-    /* line 170, scss/fragments/_login.scss */
+    /* line 171, scss/fragments/_login.scss */
     .popup__header h3 {
       color: #C4C4C4;
       font-size: 2.4rem;
       font-weight: bold;
       font-family: 'Mulish', sans-serif;
       text-decoration: underline; }
-  /* line 178, scss/fragments/_login.scss */
+  /* line 179, scss/fragments/_login.scss */
   .popup__content {
     padding: 0px 8px;
     color: #C4C4C4;
@@ -493,12 +494,14 @@ main {
     font-family: 'Mulish', sans-serif;
     text-align: center; }
 
-/* line 186, scss/fragments/_login.scss */
+/* line 187, scss/fragments/_login.scss */
 .popup.active {
   transform: translate(-50%, -50%) scale(1); }
 
-/* line 189, scss/fragments/_login.scss */
+/* line 190, scss/fragments/_login.scss */
 #overlay {
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   transition: 250ms ease-in-out;
   opacity: 0;
@@ -509,8 +512,9 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none; }
 
-/* line 200, scss/fragments/_login.scss */
+/* line 203, scss/fragments/_login.scss */
 #overlay.active {
+  z-index: 1001;
   pointer-events: all;
   opacity: 1; }
 

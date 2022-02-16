@@ -1,0 +1,20 @@
+.list__picture{
+    flex-direction: row;
+}
+.social__media--container{
+    height: 450px;
+    justify-content: space-between;
+}
+.social__media--list{
+    margin-left: 17%;
+}
+.social__media--container .social__media--list li{
+    height: 60px;
+}
+.image__container{
+    width: 562.4px;
+    left: 100%;
+    transform: translate(-100%);
+    margin-bottom: -0.5%;
+    position: absolute;
+}

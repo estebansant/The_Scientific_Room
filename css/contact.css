@@ -329,6 +329,13 @@ main {
     text-align: left; }
 
 /* line 30, scss/fragments/_contact.scss */
+.list__picture {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%; }
+
+/* line 36, scss/fragments/_contact.scss */
 .social__media--container {
   display: flex;
   justify-content: center;
@@ -337,7 +344,7 @@ main {
   height: 300px;
   margin-top: 25px;
   background-color: #201E1C; }
-  /* line 38, scss/fragments/_contact.scss */
+  /* line 44, scss/fragments/_contact.scss */
   .social__media--container .social__media--list {
     min-width: 288px;
     max-width: 450px;
@@ -346,7 +353,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     height: inherit; }
-    /* line 46, scss/fragments/_contact.scss */
+    /* line 52, scss/fragments/_contact.scss */
     .social__media--container .social__media--list li {
       width: 90%;
       height: 45px;
@@ -359,34 +366,39 @@ main {
       border-radius: 5px;
       color: #FFFFFF;
       font-size: 1.6rem; }
-      /* line 58, scss/fragments/_contact.scss */
+      /* line 64, scss/fragments/_contact.scss */
       .social__media--container .social__media--list li a {
         display: flex;
         flex-direction: row;
         align-items: center;
         color: #FFFFFF; }
-        /* line 63, scss/fragments/_contact.scss */
+        /* line 69, scss/fragments/_contact.scss */
         .social__media--container .social__media--list li a i {
           font-size: 2.2rem;
           padding-right: 12px;
           color: #FFFFFF; }
-        /* line 68, scss/fragments/_contact.scss */
+        /* line 74, scss/fragments/_contact.scss */
         .social__media--container .social__media--list li a p {
           color: #FFFFFF;
           font-size: 1.6rem; }
 
-/* line 76, scss/fragments/_contact.scss */
+/* line 82, scss/fragments/_contact.scss */
+.social__media--list #email {
+  padding-right: 12px;
+  font-size: 2.2rem; }
+
+/* line 86, scss/fragments/_contact.scss */
 .social__media--list li a:hover > p {
   text-decoration: underline; }
 
-/* line 79, scss/fragments/_contact.scss */
+/* line 89, scss/fragments/_contact.scss */
 .image__container {
-  min-width: 280px;
-  width: 100%;
+  width: 65%;
   height: auto;
-  margin-top: 25px;
-  margin-bottom: -10px; }
-  /* line 85, scss/fragments/_contact.scss */
+  margin-top: calc(0% - 11.7%);
+  margin-bottom: -6px;
+  align-self: flex-end; }
+  /* line 95, scss/fragments/_contact.scss */
   .image__container .image {
     width: 100%;
     height: auto; }

@@ -10,7 +10,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 0px 30px 0px;
+    padding: 0px 30px;
     min-height: calc(100vh - 200px);
 }
 .login__container{
@@ -138,8 +138,9 @@ main{
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 350ms ease-in-out;
+    min-height: calc(100vh - 200px);
     background-color: $secondary-purple;
-    z-index: 100;
+    z-index: 10002;
     width: 90%;
     min-height: calc(100vh - 63px - 15vh);
     padding: 0px 30px;
@@ -187,6 +188,8 @@ main{
     transform: translate(-50%, -50%) scale(1);
 }
 #overlay{
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     transition: 250ms ease-in-out;
     opacity: 0;
@@ -198,6 +201,7 @@ main{
     pointer-events: none;
 }
 #overlay.active{
+    z-index: 1001;
     pointer-events: all;
     opacity: 1;
 }
