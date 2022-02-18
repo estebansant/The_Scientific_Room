@@ -1,0 +1,40 @@
+.principal .text{
+    width: 75%;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 0px 50px;
+}
+.principal .text .text__title{
+    margin-top: 35px;
+}
+.principal .text .text__content{
+    margin-bottom: 35px;
+}
+footer{
+    justify-content: space-around;
+}
+.contact__title{
+    font-size: 2rem;
+}
+.contact__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.contact__list li{
+    padding-right: 35px;
+}
+.contact__list li a i{
+   padding-right: 12px;
+}
+.contact__list li a p{
+    display: inline;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.politics a{
+    font-size: 1.8rem;
+}

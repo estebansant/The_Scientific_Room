@@ -10,29 +10,29 @@ main{
     justify-content: center;
     .text{
         min-width: 280px;
-        width: 750px;
+        width: 100%;
         height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 0px 50px;
-        background: #010039;
+        padding: 0px 30px;
+        background-color: $secondary-purple;
         border: solid 2px $white;
         border-radius: $border-radius;
-        margin-top: 25px;
+        margin-top: 15px;
         margin-bottom: 35px;
         &__title{
             font-size: 2.4rem;
             font-weight: bold;
             color: $white;
-            margin-top: 35px;
+            margin-top: 18px;
             margin-bottom: 25px;
         }
         &__content{
             font-size: 1.6rem;
             color: $main-gray;
-            margin-bottom: 35px;
+            margin-bottom: 18px;
             text-align: justify;
         }
     }

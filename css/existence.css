@@ -311,30 +311,30 @@ main {
   /* line 11, scss/fragments/_existence.scss */
   .principal .text {
     min-width: 280px;
-    width: 750px;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 50px;
-    background: #010039;
+    padding: 0px 30px;
+    background-color: #010039;
     border: solid 2px #FFFFFF;
     border-radius: 8px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 35px; }
     /* line 25, scss/fragments/_existence.scss */
     .principal .text__title {
       font-size: 2.4rem;
       font-weight: bold;
       color: #FFFFFF;
-      margin-top: 35px;
+      margin-top: 18px;
       margin-bottom: 25px; }
     /* line 32, scss/fragments/_existence.scss */
     .principal .text__content {
       font-size: 1.6rem;
       color: #C4C4C4;
-      margin-bottom: 35px;
+      margin-bottom: 18px;
       text-align: justify; }
 
 /* line 1, scss/fragments/_footer.scss */
