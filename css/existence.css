@@ -1,0 +1,401 @@
+/* line 8, scss/fragments/_global.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+/* line 15, scss/fragments/_global.scss */
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  min-height: 100%; }
+
+/* line 21, scss/fragments/_global.scss */
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: radial-gradient(285.93% 161.25% at -11.11% 0%, #010039 23.75%, #8933FF 89.37%);
+  background-attachment: fixed; }
+
+/* line 27, scss/fragments/_global.scss */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; }
+
+/* line 31, scss/fragments/_global.scss */
+::-webkit-scrollbar-track {
+  background-color: #010039; }
+
+/* line 34, scss/fragments/_global.scss */
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background: #8933FF; }
+
+/* line 39, scss/fragments/_global.scss */
+::-webkit-scrollbar-thumb:hover {
+  transition: all .3s ease-out;
+  background: linear-gradient(transparent, #8933FF);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5); }
+
+/* line 44, scss/fragments/_global.scss */
+hr {
+  width: 0px;
+  height: 0px;
+  border: 0px; }
+
+/* line 1, scss/fragments/_header.scss */
+header {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #010039;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  z-index: 900; }
+
+/* line 13, scss/fragments/_header.scss */
+.header__logo {
+  width: 238px;
+  height: 44px;
+  margin-top: 6.5px;
+  margin-left: 18px;
+  margin-bottom: 6.5px;
+  display: block;
+  align-self: center; }
+
+/* line 22, scss/fragments/_header.scss */
+.header__logo--container {
+  display: flex;
+  align-items: center;
+  text-decoration: none; }
+
+/* line 27, scss/fragments/_header.scss */
+.header__logo img {
+  width: 29.08px;
+  height: 38px; }
+
+/* line 31, scss/fragments/_header.scss */
+.header__logo--title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 14px; }
+
+/* line 1, scss/fragments/_sidebar.scss */
+.opacity {
+  z-index: 500;
+  width: 100%;
+  height: 63px; }
+
+/* line 6, scss/fragments/_sidebar.scss */
+.menu {
+  width: 44px;
+  height: 37px;
+  margin: 4px 20px 0 0;
+  background: transparent url(../images/Icons/hamburger-menu.svg);
+  border: none;
+  top: 13px;
+  cursor: pointer;
+  transition: all .350s ease-in-out; }
+
+/* line 16, scss/fragments/_sidebar.scss */
+#x {
+  position: absolute; }
+
+/* line 20, scss/fragments/_sidebar.scss */
+.header__sidebar {
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  width: 241px;
+  height: 100vh;
+  background-color: #261F2D;
+  transition: all .350s ease-in-out; }
+
+/* line 30, scss/fragments/_sidebar.scss */
+.x {
+  background: transparent url(../images/Icons/x_icon.svg);
+  width: 20px;
+  height: 20px;
+  margin: 10px 0 0 15px;
+  border: none;
+  cursor: pointer; }
+
+/* line 38, scss/fragments/_sidebar.scss */
+.sidebar__menu--button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 215px;
+  height: 52px;
+  margin: 0 auto;
+  margin-bottom: 14px; }
+  /* line 46, scss/fragments/_sidebar.scss */
+  .sidebar__menu--button .menu--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 34px;
+    background-color: #8933FF;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    line-height: 16.41px;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25); }
+  /* line 60, scss/fragments/_sidebar.scss */
+  .sidebar__menu--button .menu--button:hover {
+    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer; }
+
+/* line 65, scss/fragments/_sidebar.scss */
+.sidebar__lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 16px; }
+  /* line 71, scss/fragments/_sidebar.scss */
+  .sidebar__lines .line_1 {
+    width: 100%;
+    height: 0px;
+    border-bottom: 3px solid #000000; }
+  /* line 76, scss/fragments/_sidebar.scss */
+  .sidebar__lines .line_2 {
+    width: 100%;
+    height: 0px;
+    border-bottom: 3px solid #000000; }
+
+/* line 82, scss/fragments/_sidebar.scss */
+.sidebar__menu--navigation {
+  display: flex;
+  flex-direction: column; }
+
+/* line 86, scss/fragments/_sidebar.scss */
+.sidebar__menu--navigation .home {
+  width: 36px;
+  height: 37px;
+  background-image: url(../images/Icons/home_icon.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 15px; }
+
+/* line 95, scss/fragments/_sidebar.scss */
+.sidebar__menu--navigation .settings {
+  width: 36px;
+  height: 37px;
+  background-image: url(../images/Icons/settings_icon.svg);
+  margin-right: 15px; }
+
+/* line 102, scss/fragments/_sidebar.scss */
+.sidebar__menu--navigation .questions {
+  width: 18px;
+  height: 37px;
+  font-family: 'Lato';
+  font-size: 45px;
+  color: #C4C4C4;
+  margin-right: 34px;
+  padding-left: 9px;
+  align-self: center;
+  margin-top: -10px; }
+
+/* line 113, scss/fragments/_sidebar.scss */
+.sidebar__menu--navigation a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 30px;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 18px; }
+
+/* line 125, scss/fragments/_sidebar.scss */
+.sidebar__menu--navigation a:hover {
+  padding-left: 22px;
+  cursor: pointer; }
+
+/* line 129, scss/fragments/_sidebar.scss */
+.sidebar__menu .line_3 {
+  display: flex;
+  margin-top: 12px;
+  width: 100%;
+  border-bottom: 3px solid #000000; }
+
+/* line 135, scss/fragments/_sidebar.scss */
+.sidebar__language {
+  display: flex;
+  flex-direction: column; }
+  /* line 138, scss/fragments/_sidebar.scss */
+  .sidebar__language .sidebar__language--text {
+    margin: 12px 0 8px 22px;
+    color: #C4C4C4;
+    font-size: 1.8rem; }
+  /* line 143, scss/fragments/_sidebar.scss */
+  .sidebar__language .sidebar__language--select {
+    margin: 0 0 0 22px;
+    width: 130px;
+    height: 25px;
+    background-color: #261F2D;
+    border: 2px solid #C4C4C4;
+    color: #FFFFFF;
+    font-size: 1.6rem; }
+    /* line 151, scss/fragments/_sidebar.scss */
+    .sidebar__language .sidebar__language--select .sidebar__language--select option {
+      font-size: 1.6rem; }
+
+/* line 156, scss/fragments/_sidebar.scss */
+.sidebar__language--select:hover {
+  cursor: pointer; }
+
+/* line 159, scss/fragments/_sidebar.scss */
+#check:checked ~ label #menu {
+  right: 250px;
+  opacity: 0%;
+  pointer-events: none; }
+
+/* line 164, scss/fragments/_sidebar.scss */
+#check:checked ~ label #x {
+  left: 115px; }
+
+/* line 167, scss/fragments/_sidebar.scss */
+.sidebar__contact {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 15px;
+  width: 100%; }
+  /* line 173, scss/fragments/_sidebar.scss */
+  .sidebar__contact .sidebar__contact--title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #C4C4C4;
+    padding-bottom: 12px;
+    padding-left: 25px; }
+  /* line 180, scss/fragments/_sidebar.scss */
+  .sidebar__contact .sidebar__contact--list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    /* line 186, scss/fragments/_sidebar.scss */
+    .sidebar__contact .sidebar__contact--list i {
+      font-size: 2rem;
+      color: #C4C4C4; }
+
+/* line 1, scss/fragments/_existence.scss */
+main {
+  min-height: calc(100vh - 63px - 15vh);
+  width: 100vw;
+  min-width: 320px;
+  margin-top: 80px; }
+
+/* line 7, scss/fragments/_existence.scss */
+.principal {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  /* line 11, scss/fragments/_existence.scss */
+  .principal .text {
+    min-width: 280px;
+    width: 750px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    background: #010039;
+    border: solid 2px #FFFFFF;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 35px; }
+    /* line 25, scss/fragments/_existence.scss */
+    .principal .text__title {
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      margin-top: 35px;
+      margin-bottom: 25px; }
+    /* line 32, scss/fragments/_existence.scss */
+    .principal .text__content {
+      font-size: 1.6rem;
+      color: #C4C4C4;
+      margin-bottom: 35px;
+      text-align: justify; }
+
+/* line 1, scss/fragments/_footer.scss */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 15vh;
+  width: 100%;
+  background-color: #010039; }
+
+/* line 8, scss/fragments/_footer.scss */
+.contact {
+  width: fit-content;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  /* line 14, scss/fragments/_footer.scss */
+  .contact__title {
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+    font-weight: 700; }
+  /* line 20, scss/fragments/_footer.scss */
+  .contact__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer; }
+    /* line 26, scss/fragments/_footer.scss */
+    .contact__list li {
+      width: fit-content;
+      height: fit-content;
+      font-size: 1.6rem;
+      padding-top: 8px;
+      color: #C4C4C4; }
+      /* line 32, scss/fragments/_footer.scss */
+      .contact__list li a {
+        color: #FFFFFF; }
+        /* line 34, scss/fragments/_footer.scss */
+        .contact__list li a i {
+          padding-right: 25px;
+          font-size: 2.2rem; }
+        /* line 38, scss/fragments/_footer.scss */
+        .contact__list li a p {
+          display: none; }
+
+/* line 45, scss/fragments/_footer.scss */
+.politics {
+  height: inherit;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end; }
+  /* line 52, scss/fragments/_footer.scss */
+  .politics a {
+    color: #FFFFFF;
+    font-size: 1.6rem; }
+
+/* line 57, scss/fragments/_footer.scss */
+footer a:hover {
+  text-decoration: underline; }

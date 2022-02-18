@@ -73,39 +73,37 @@
         </section>
     </header>
 
-    <main>
-        <section id="content">
-            <section class="login">
-                <div class="login__container">   
-                    <h2>Log In</h2>
-                    <form class="login__container--form">
-                        <input type="text" class="input" placeholder="E-Mail"/>
-                        <input type="password" class="input" placeholder="Password"/>
-                        <button data-popup-target="#popup" class="button" type="button">Log In</button>
-                        <div class="popup" id="popup">
-                            <button data-popup-close class="popup__close" type="button">&times;</button>
-                            <div class="popup__header">
-                                <h3>Disclaimer</h3>
-                            </div>
-                            <div class="popup__content">
-                                <p>Thanks for submitting your request! <br/> sadly this website has no backend, hence, it can't log you in the platform. <br/>  <br/> I encourage you to keep exploring the website to discover other features. <br/> <br/> Please click on the <strong> X </strong> button to close this frame.</p>
-                            </div>
+    <main id="content">
+        <section class="login">
+            <div class="login__container">   
+                <h2>Log In</h2>
+                <form class="login__container--form">
+                    <input type="text" class="input" placeholder="E-Mail"/>
+                    <input type="password" class="input" placeholder="Password"/>
+                    <button data-popup-target="#popup" class="button" type="button">Log In</button>
+                    <div class="popup" id="popup">
+                        <button data-popup-close class="popup__close" type="button">&times;</button>
+                        <div class="popup__header">
+                            <h3>Disclaimer</h3>
                         </div>
-                        <div class="login__container--remember-me">
-                            <label>
-                                <input type="checkbox" name="" id="box1" value="checkbox"/>
-                                <p>Remember me</p>
-                            </label>
-                            <a href="/">I forgot my password</a>
+                        <div class="popup__content">
+                            <p>Thanks for submitting your request! <br/> sadly this website has no backend, hence, it can't log you in the platform. <br/>  <br/> I encourage you to keep exploring the website to discover other features. <br/> <br/> Please click on the <strong> X </strong> button to close this frame.</p>
                         </div>
-                    </form>
-                    <section class="login__container--social-media">
-                        <a href="../index.html"><i class="fab fa-google"></i><p>Log in with Google</p></a>
-                        <a href="../index.html"><i class="fab fa-twitter"></i><p>Log in with Twitter</p></a>
-                    </section>
-                    <div class="login__container--register"><p>Don't have an account?</p> <a href="./signup.html">Sign Up</a></div>
-                </div>
-            </section>
+                    </div>
+                    <div class="login__container--remember-me">
+                        <label>
+                            <input type="checkbox" name="" id="box1" value="checkbox"/>
+                            <p>Remember me</p>
+                        </label>
+                        <a href="/">I forgot my password</a>
+                    </div>
+                </form>
+                <section class="login__container--social-media">
+                    <a href="../index.html"><i class="fab fa-google"></i><p>Log in with Google</p></a>
+                    <a href="../index.html"><i class="fab fa-twitter"></i><p>Log in with Twitter</p></a>
+                </section>
+                <div class="login__container--register"><p>Don't have an account?</p> <a href="./signup.html">Sign Up</a></div>
+            </div>
         </section>
     </main>
 
@@ -122,7 +120,7 @@
             </ul>
         </div>
         <div class="politics">
-            <a href="#">Reasons of existence</a>
+            <a href="./existence.html">Reasons of existence</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
         </div>
