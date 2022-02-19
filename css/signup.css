@@ -320,76 +320,77 @@ main {
   flex-direction: column;
   background-color: transparent;
   border: none;
+  margin-bottom: 30px;
   padding: 0px 30px;
   min-height: 700px;
   width: 100%;
   box-shadow: none; }
-  /* line 26, scss/fragments/_signup.scss */
+  /* line 27, scss/fragments/_signup.scss */
   .login__container h2 {
     font-size: 2rem;
     color: #FFFFFF;
     font-weight: 700; }
 
-/* line 32, scss/fragments/_signup.scss */
+/* line 33, scss/fragments/_signup.scss */
 .login__container--form {
   display: flex;
   flex-direction: column; }
 
-/* line 36, scss/fragments/_signup.scss */
+/* line 37, scss/fragments/_signup.scss */
 .login__container--remember-me {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
   color: #C4C4C4; }
-  /* line 42, scss/fragments/_signup.scss */
+  /* line 43, scss/fragments/_signup.scss */
   .login__container--remember-me label {
     font-size: 1.6rem;
     padding-bottom: 5px;
     display: flex;
     flex-direction: row;
     align-items: center; }
-    /* line 48, scss/fragments/_signup.scss */
+    /* line 49, scss/fragments/_signup.scss */
     .login__container--remember-me label p {
       padding-left: 5px; }
-  /* line 52, scss/fragments/_signup.scss */
+  /* line 53, scss/fragments/_signup.scss */
   .login__container--remember-me a {
     text-decoration: none;
     color: #C4C4C4;
     font-size: 1.6rem; }
-  /* line 57, scss/fragments/_signup.scss */
+  /* line 58, scss/fragments/_signup.scss */
   .login__container--remember-me a:hover {
     text-decoration: underline; }
 
-/* line 61, scss/fragments/_signup.scss */
+/* line 62, scss/fragments/_signup.scss */
 .login__container--social-media a {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
   color: #C4C4C4; }
-  /* line 67, scss/fragments/_signup.scss */
+  /* line 68, scss/fragments/_signup.scss */
   .login__container--social-media a i {
     color: #FFFFFF;
     font-size: 2.2rem; }
-  /* line 71, scss/fragments/_signup.scss */
+  /* line 72, scss/fragments/_signup.scss */
   .login__container--social-media a p {
     font-size: 1.8rem;
     color: #C4C4C4;
     font-weight: 500;
     padding-left: 8px; }
 
-/* line 78, scss/fragments/_signup.scss */
+/* line 79, scss/fragments/_signup.scss */
 .login__container--social-media a p:hover {
   text-decoration: underline; }
 
-/* line 81, scss/fragments/_signup.scss */
+/* line 82, scss/fragments/_signup.scss */
 .login__container--register {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  /* line 86, scss/fragments/_signup.scss */
+  /* line 87, scss/fragments/_signup.scss */
   .login__container--register p {
     color: #C4C4C4;
     font-size: 1.4rem;
@@ -397,18 +398,18 @@ main {
     padding-right: 3px;
     text-align: center;
     padding-bottom: 5px; }
-  /* line 94, scss/fragments/_signup.scss */
+  /* line 95, scss/fragments/_signup.scss */
   .login__container--register a {
     font-size: 1.8rem;
     color: #FFFFFF;
     font-weight: 600;
     text-decoration: none; }
 
-/* line 102, scss/fragments/_signup.scss */
+/* line 103, scss/fragments/_signup.scss */
 .login__container--register a:hover {
   text-decoration: underline; }
 
-/* line 105, scss/fragments/_signup.scss */
+/* line 106, scss/fragments/_signup.scss */
 .input {
   background-color: transparent;
   border-top: 0;
@@ -423,11 +424,11 @@ main {
   height: 50px;
   color: #FFFFFF; }
 
-/* line 119, scss/fragments/_signup.scss */
+/* line 120, scss/fragments/_signup.scss */
 .input::placeholder {
   color: #FFFFFF; }
 
-/* line 122, scss/fragments/_signup.scss */
+/* line 123, scss/fragments/_signup.scss */
 .button {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
@@ -444,7 +445,7 @@ main {
   align-items: center;
   justify-content: center; }
 
-/* line 138, scss/fragments/_signup.scss */
+/* line 139, scss/fragments/_signup.scss */
 .popup {
   position: fixed;
   top: 50%;
@@ -462,7 +463,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  /* line 155, scss/fragments/_signup.scss */
+  /* line 156, scss/fragments/_signup.scss */
   .popup__close {
     position: fixed;
     top: 2%;
@@ -474,21 +475,21 @@ main {
     font-size: 3rem;
     color: #C4C4C4;
     font-weight: bold; }
-  /* line 167, scss/fragments/_signup.scss */
+  /* line 168, scss/fragments/_signup.scss */
   .popup__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 0 0 50px; }
-    /* line 173, scss/fragments/_signup.scss */
+    /* line 174, scss/fragments/_signup.scss */
     .popup__header h3 {
       color: #C4C4C4;
       font-size: 2.4rem;
       font-weight: bold;
       font-family: 'Mulish', sans-serif;
       text-decoration: underline; }
-  /* line 181, scss/fragments/_signup.scss */
+  /* line 182, scss/fragments/_signup.scss */
   .popup__content {
     padding: 0px 8px;
     color: #C4C4C4;
@@ -496,11 +497,11 @@ main {
     font-family: 'Mulish', sans-serif;
     text-align: center; }
 
-/* line 189, scss/fragments/_signup.scss */
+/* line 190, scss/fragments/_signup.scss */
 .popup.active {
   transform: translate(-50%, -50%) scale(1); }
 
-/* line 192, scss/fragments/_signup.scss */
+/* line 193, scss/fragments/_signup.scss */
 #overlay {
   position: fixed;
   transition: 250ms ease-in-out;
@@ -512,7 +513,7 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none; }
 
-/* line 203, scss/fragments/_signup.scss */
+/* line 204, scss/fragments/_signup.scss */
 #overlay.active {
   z-index: 1001;
   pointer-events: all;
