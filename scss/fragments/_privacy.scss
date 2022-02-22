@@ -53,12 +53,20 @@ main{
                 color: $main-gray;
                 margin-bottom: 18px;
                 text-align: justify;
+                & a{
+                    font-size: 1.6rem;
+                    color: $main-gray;
+                    font-weight: bold;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
             &--list{
                 font-size: 1.6rem;
                 color: $main-gray;
                 margin-bottom: 18px;
                 text-align: justify;
+                margin-left: 15px;
             }
         }
     }

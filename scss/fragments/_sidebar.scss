@@ -82,6 +82,7 @@
 .sidebar__menu--navigation{
     display: flex;
     flex-direction: column;
+    list-style: none;
 }
 .sidebar__menu--navigation .home{
     width: 36px;
@@ -183,6 +184,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        list-style: none;
         & i{
             font-size: 2rem;
             color: $main-gray;
