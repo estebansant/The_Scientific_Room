@@ -18,6 +18,7 @@ main{
             color: $white;
             font-weight: bold;
             margin-top: 15px;
+            margin-bottom: 35px;
         }
         & a{
             cursor: pointer;
@@ -25,20 +26,25 @@ main{
                 color: $white;
                 font-size: 1.8rem;
                 font-weight: bold;
-                margin-top: 35px;
                 margin-bottom: 6px;
             }
             & p{
                 color: $main-gray;
                 font-size: 1.6rem;
                 font-weight: 400;
-                margin-bottom: 15px;
+                margin-bottom: 20px;
             }
         }
     }
-    & hr{
+    & .line{
         width: 100%;
         border-bottom: 2px solid $main-gray;
+        margin-bottom: 20px;
+    }
+    & .last__line{
+        width: 100%;
+        border-bottom: 2px solid $main-gray;
+        margin-bottom: 0px;
     }
 }
 .principal .container a:hover{
