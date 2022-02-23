@@ -1,3 +1,6 @@
+.principal .container{
+    margin-left: 50px;
+}
 footer{
     justify-content: space-between;
 }
