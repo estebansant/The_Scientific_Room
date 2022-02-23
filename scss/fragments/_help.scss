@@ -1,0 +1,46 @@
+main{
+    min-height: calc(100vh - 63px - 15vh);
+    width: 100vw;
+    min-width: 320px;
+    margin-top: 80px;
+}
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    & .container{
+        width: 90%;
+        height: fit-content;
+        margin-left: 20px;
+        & h1{
+            font-size: 2.8rem;
+            color: $white;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        & a{
+            cursor: pointer;
+            & h2{
+                color: $white;
+                font-size: 1.8rem;
+                font-weight: bold;
+                margin-top: 35px;
+                margin-bottom: 6px;
+            }
+            & p{
+                color: $main-gray;
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    & hr{
+        width: 100%;
+        border-bottom: 2px solid $main-gray;
+    }
+}
+.principal .container a:hover{
+    padding-left: 25x;
+}
