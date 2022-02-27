@@ -228,56 +228,30 @@ header {
   border-bottom: 3px solid #000000; }
 
 /* line 129, scss/fragments/_sidebar.scss */
-.sidebar__language {
-  display: flex;
-  flex-direction: column; }
-  /* line 132, scss/fragments/_sidebar.scss */
-  .sidebar__language .sidebar__language--text {
-    margin: 12px 0 8px 22px;
-    color: #C4C4C4;
-    font-size: 1.8rem; }
-  /* line 137, scss/fragments/_sidebar.scss */
-  .sidebar__language .sidebar__language--select {
-    margin: 0 0 0 22px;
-    width: 130px;
-    height: 25px;
-    background-color: #261F2D;
-    border: 2px solid #C4C4C4;
-    color: #FFFFFF;
-    font-size: 1.6rem; }
-    /* line 145, scss/fragments/_sidebar.scss */
-    .sidebar__language .sidebar__language--select .sidebar__language--select option {
-      font-size: 1.6rem; }
-
-/* line 150, scss/fragments/_sidebar.scss */
-.sidebar__language--select:hover {
-  cursor: pointer; }
-
-/* line 153, scss/fragments/_sidebar.scss */
 #check:checked ~ label #menu {
   right: 250px;
   opacity: 0%;
   pointer-events: none; }
 
-/* line 158, scss/fragments/_sidebar.scss */
+/* line 134, scss/fragments/_sidebar.scss */
 #check:checked ~ label #x {
   left: 115px; }
 
-/* line 161, scss/fragments/_sidebar.scss */
+/* line 137, scss/fragments/_sidebar.scss */
 .sidebar__contact {
   display: flex;
   flex-direction: column;
   position: absolute;
   bottom: 15px;
   width: 100%; }
-  /* line 167, scss/fragments/_sidebar.scss */
+  /* line 143, scss/fragments/_sidebar.scss */
   .sidebar__contact .sidebar__contact--title {
     font-size: 1.8rem;
     font-weight: 700;
     color: #C4C4C4;
     padding-bottom: 12px;
     padding-left: 25px; }
-  /* line 174, scss/fragments/_sidebar.scss */
+  /* line 150, scss/fragments/_sidebar.scss */
   .sidebar__contact .sidebar__contact--list {
     width: 100%;
     display: flex;
@@ -285,7 +259,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     list-style: none; }
-    /* line 181, scss/fragments/_sidebar.scss */
+    /* line 157, scss/fragments/_sidebar.scss */
     .sidebar__contact .sidebar__contact--list i {
       font-size: 2rem;
       color: #C4C4C4; }

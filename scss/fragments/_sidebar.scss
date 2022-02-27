@@ -126,30 +126,6 @@
     width: 100%;
     border-bottom: 3px solid #000000;
 }
-.sidebar__language{
-    display: flex;
-    flex-direction: column;
-    .sidebar__language--text{
-        margin: 12px 0 8px 22px;
-        color: $main-gray;
-        font-size: 1.8rem;
-    }
-    .sidebar__language--select{
-        margin: 0 0 0 22px;
-        width: 130px;
-        height: 25px;
-        background-color: $gray-buttons;
-        border: 2px solid $main-gray;
-        color: $white;
-        font-size: 1.6rem;
-        .sidebar__language--select option{
-            font-size: 1.6rem;
-        }
-    }
-}
-.sidebar__language--select:hover{
-    cursor: pointer;
-}
 #check:checked ~ label #menu{
     right: 250px;
     opacity: 0%;
