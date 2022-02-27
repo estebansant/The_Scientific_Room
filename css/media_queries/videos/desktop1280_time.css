@@ -1,0 +1,52 @@
+main{
+    min-height: 1705px;
+}
+.video{
+    margin: 30px 15px 30px 100px;
+}
+.description{
+    width: 58.7%;
+}
+.description__title{
+    margin-left: 85px;
+}
+.description__text{
+    margin-left: 85px;
+}
+.description__creator{
+    margin-left: 800px;
+}
+.carousel{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 40px;
+    top: 100px;
+    width: 475px;
+    height: 1665px;
+}
+.carousel__title{
+    display: none;
+}
+.carousel__container{
+    width: 350px;
+    height: 1400px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    left: 45%;
+    transform: rotate(90deg);
+}
+.swiper-slide:hover{
+    margin-top: 25px;
+}
+.swiper-button-prev {
+    top: 10px;
+}
+.swiper-button-next {
+    top: auto;
+    bottom: 10px;
+}
+.swiper-slide:hover~.swiper-slide{
+    transform: translate3d( 0, 25px, 0);
+}
