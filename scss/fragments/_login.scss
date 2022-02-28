@@ -58,10 +58,13 @@ main{
         text-decoration: underline;
     }
 }
-.login__container--social-media a{
+.login__container--social-media button{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
+    border: none;
+    margin: 0 auto;
     margin-bottom: 10px;
     color: $main-gray;
     & i{
@@ -75,7 +78,8 @@ main{
         padding-left: 8px;
     }
 }
-.login__container--social-media a p:hover{
+.login__container--social-media button:hover > p{
+    cursor: pointer;
     text-decoration: underline;
 }
 .login__container--register{
