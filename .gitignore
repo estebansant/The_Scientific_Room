@@ -102,9 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# Ignore .PNG / .JPG images / .SVG images
-*.png
-*.jpg
-*.jpeg
-*.svg
