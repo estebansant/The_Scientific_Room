@@ -1,5 +1,7 @@
 header{
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
     height: 63px;
     display: flex;
     justify-content: space-between;
