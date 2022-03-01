@@ -8,10 +8,14 @@ main{
     margin-bottom: 30px;
 }
 .title h2{
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 auto;
     margin-top: 2.5rem;
     font-size: 3rem;

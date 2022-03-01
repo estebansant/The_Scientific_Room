@@ -278,10 +278,14 @@ main {
 
 /* line 10, scss/fragments/_main.scss */
 .title h2 {
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 0 auto;
   margin-top: 2.5rem;
   font-size: 3rem;
@@ -289,7 +293,7 @@ main {
   height: 80px;
   color: white; }
 
-/* line 22, scss/fragments/_main.scss */
+/* line 26, scss/fragments/_main.scss */
 .title h3 {
   display: flex;
   flex-direction: column;
