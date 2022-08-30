@@ -47,6 +47,8 @@ main{
         margin-bottom: 0px;
     }
 }
-.principal .container a:hover{
-    padding-left: 25x;
+@media (min-width: 768px){
+    .principal .container a:hover{
+        padding-left: 25x;
+    }
 }

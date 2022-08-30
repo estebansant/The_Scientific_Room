@@ -82,11 +82,7 @@
     .swiper-slide{
         transition: 250ms all;
 
-        &:hover{
-            transform: scale(1.2);
-            z-index: 1;
-            margin-left: 25px;
-        }
+        
     }
 }
 .information{
@@ -115,13 +111,20 @@
         }
     }
 }
-.swiper-slide:hover~.swiper-slide {
-    transform: translate3d(25px, 0, 0);
-}
-.swiper-wrapper:hover .swiper-slide {
-    opacity: 0.5;
-}
-.swiper-wrapper:hover .swiper-slide:hover {
-    transform: scale(1.2);
-    opacity: 1;
+@media (min-width: 768px) {
+    .carousel .swiper-slide:hover{
+        transform: scale(1.2);
+        z-index: 1;
+        margin-left: 25px;
+    }
+    .swiper-slide:hover~.swiper-slide {
+        transform: translate3d(25px, 0, 0);
+    }
+    .swiper-wrapper:hover .swiper-slide {
+        opacity: 0.5;
+    }
+    .swiper-wrapper:hover .swiper-slide:hover {
+        transform: scale(1.2);
+        opacity: 1;
+    }
 }

@@ -57,10 +57,6 @@
         line-height: 16.41px;
         box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
     }
-    .menu--button:hover{
-        box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-    }
 }
 .sidebar__lines{
     display: flex;
@@ -116,10 +112,6 @@
     padding-bottom: 10px;
     padding-left: 18px;
 }
-.sidebar__menu--navigation a:hover{
-    padding-left: 22px;
-    cursor: pointer;
-}
 .sidebar__menu .line_3{
     display: flex;
     margin-top: 12px;
@@ -159,4 +151,14 @@
             color: $main-gray;
         }
     }  
+}
+@media (min-width: 768px){
+    .sidebar__menu--navigation a:hover{
+        padding-left: 22px;
+        cursor: pointer;
+    }
+    .menu--button:hover{
+        box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
 }
